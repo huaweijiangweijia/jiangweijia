@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/upload
+END
+upload-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/upload/upload-dao.xml
+END
+upload-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/upload/upload-business.xml
+END
+upload-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/upload/upload-web-spring.xml
+END

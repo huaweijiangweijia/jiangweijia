@@ -1,0 +1,67 @@
+8
+
+dir
+804
+http://125.76.249.115:8080/svn/sales/jiyun/config/spring/conf/baseInfo
+http://125.76.249.115:8080/svn/sales
+
+
+
+2015-02-07T07:24:15.316518Z
+316
+lcc
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+081e45d7-d262-1141-abe1-e9a051cbb99e
+
+baseInfo-web-spring.xml
+file
+
+
+
+
+2015-08-26T03:44:05.890625Z
+2ddf56542267c5f728d2c6de1cf9f5e5
+2015-02-03T09:24:16.541157Z
+232
+lcc
+
+productCorrelation
+dir
+
+baseInfo-dao.xml
+file
+
+
+
+
+2015-08-26T03:44:05.906250Z
+9fd1f070286dd781c04f93f0f5b13750
+2015-02-04T01:44:06.344742Z
+248
+lcc
+
+baseInfo-business.xml
+file
+
+
+
+
+2015-08-26T03:44:05.906250Z
+5c91c67f39835b6f2a7a7d75de54fc85
+2015-02-07T07:24:15.316518Z
+316
+lcc
+

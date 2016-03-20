@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/assessment/customer
+END
+custormer-asm-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/assessment/customer/custormer-asm-dao.xml
+END
+custormer-asm-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/assessment/customer/custormer-asm-business.xml
+END
+custormer-asm-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/assessment/customer/custormer-asm-web-spring.xml
+END

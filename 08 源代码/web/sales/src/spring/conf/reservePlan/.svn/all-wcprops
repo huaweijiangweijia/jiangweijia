@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/reservePlan
+END
+reservePlan-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/reservePlan/reservePlan-web-spring.xml
+END
+reservePlan-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/reservePlan/reservePlan-dao.xml
+END
+reservePlan-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/reservePlan/reservePlan-business.xml
+END

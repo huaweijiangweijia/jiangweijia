@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+   http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+	default-autowire="byType">
+
+	<bean id="baseInfoService" class="com.tl.resource.business.baseInfo.BaseInfoServiceImpl">
+		<property name="tcompanyInforDAO">
+			<ref bean="TCompanyInforDAO"/>
+		</property>
+		
+		<property name="tcustomersDegreeDAO">
+			<ref bean="TCustomersDegreeDAO"/>
+		</property>
+		
+		<property name="tcustomersInforDAO">
+			<ref bean="TCustomersInforDAO"/>
+		</property>
+		
+		<property name="tsuppliersInforDAO">
+			<ref bean="TSuppliersInforDAOImpl"/>
+		</property>
+		
+		<property name="texchangeRateDAO">
+			<ref bean="TExchangeRateDAO"/>
+		</property>
+		
+		<property name="treserveInforDAO">
+			<ref bean="TReserveInforDAO"/>
+		</property>
+		
+		<property name="taccountsInforDAO">
+			<ref bean="TAccountsInforDAO"/>
+		</property>
+		
+		<property name="trebateDAO">
+			<ref bean="TRebateDAO"/>
+		</property>
+		
+		<property name="tuserInforDAO">
+			<ref bean="TUserInforDAO"/>
+		</property>
+		
+		<!-- 品牌信息Dao(ftl 2009-12-22） -->
+		<property name="proBrandDao">
+			<ref bean="TProductBrandDAO"/>
+		</property>
+		
+			<!-- 品牌信息Dao(ftl 2009-12-22） -->
+		<property name="suppliersBrandDAO">
+			<ref bean="TSuppliersBrandDAO"/>
+		</property>
+		<property name="productSortDAO">
+			<ref bean="TProductSortDAO"/>
+		</property>
+		<property name="proToolsInforDAO">
+			<ref bean="TProductToolsInforDAOImpl" />
+		</property>
+		
+		<!-- 税率Dao -->
+		<property name="taxRateDAO">
+			<ref bean="TaxRateDAO"/>
+		</property>
+		<property name="orderInforDao">
+			<ref bean="TOrderInforDAOImpl"/>
+		</property>
+		<property name="orderPriceHistoryDao">
+			<ref bean="torderPriceHistoryDAO"/>
+		</property>
+		<property name="accessoriesDAO" ref="TAccessoriesDAO"/>
+	</bean>
+	<bean id="ProductToolsService" class="com.tl.resource.business.baseInfo.ProductToolsServiceImp">
+		<property name="proToolsInforDAO">
+			<ref bean="TProductToolsInforDAOImpl" />
+		</property>
+	</bean>
+	<bean id="ReserveInforService" class="com.tl.resource.business.baseInfo.ReserveInforServiceImp">
+		<property name="treserveInforDAO">
+			<ref bean="TReserveInforDAO" />
+		</property>
+	</bean>
+	
+	
+	<bean id="workProcedureService" class="com.tl.resource.business.WorkProcedureServiceImpl">
+		<property name="tWorkProcedureDAO">
+			<ref bean="tWorkProcedureDAO" />
+		</property>
+	</bean>
+</beans>

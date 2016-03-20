@@ -1,0 +1,52 @@
+8
+
+dir
+804
+http://125.76.249.115:8080/svn/sales/jiyun/src/com/tl/resource/business/notepad
+http://125.76.249.115:8080/svn/sales
+
+
+
+2014-09-15T01:48:28.148742Z
+19
+lv
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+081e45d7-d262-1141-abe1-e9a051cbb99e
+
+NotepadServiceImp.java
+file
+
+
+
+
+2015-08-26T03:44:25.187500Z
+9f580a6973fa2a248df4385dbaa64055
+2014-09-15T01:48:28.148742Z
+19
+lv
+
+NotepadService.java
+file
+
+
+
+
+2015-08-26T03:44:25.171875Z
+4c738f6e17bb7977c5dab11489dda1ff
+2014-09-15T01:48:28.148742Z
+19
+lv
+

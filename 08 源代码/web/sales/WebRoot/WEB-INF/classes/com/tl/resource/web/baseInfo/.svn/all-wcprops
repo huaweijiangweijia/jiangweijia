@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sales/!svn/ver/327/jiyun/src/com/tl/resource/web/baseInfo
+END
+CompanyListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/CompanyListAction.java
+END
+UpdateBillsCodeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/UpdateBillsCodeAction.java
+END
+ReserveListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/ReserveListAction.java
+END
+SetBenchmarkExchangeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/SetBenchmarkExchangeAction.java
+END
+UpdateCompanyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/UpdateCompanyAction.java
+END
+UpdateCustemersAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/UpdateCustemersAction.java
+END
+AddCompanyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/AddCompanyAction.java
+END
+CustomersListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/CustomersListAction.java
+END
+BrandManagerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/BrandManagerAction.java
+END
+UpdateDegreeRebateAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/UpdateDegreeRebateAction.java
+END
+UpdateExchangeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/UpdateExchangeAction.java
+END
+DeleteCompanyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/DeleteCompanyAction.java
+END
+AddExchangeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/AddExchangeAction.java
+END
+AddCustomersAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/AddCustomersAction.java
+END
+CustomersOutExcelAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/CustomersOutExcelAction.java
+END
+DeleteCustemersAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/DeleteCustemersAction.java
+END
+GetCustomersDegreeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/GetCustomersDegreeAction.java
+END
+UpdateCustomersDegreeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/UpdateCustomersDegreeAction.java
+END
+DeleteExchangeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/DeleteExchangeAction.java
+END
+TaxRateManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/TaxRateManager.java
+END
+UpdateSupplierAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/UpdateSupplierAction.java
+END
+GetUserInforListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/GetUserInforListAction.java
+END
+AddCustomersDegreeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/AddCustomersDegreeAction.java
+END
+DegreeRebateListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/DegreeRebateListAction.java
+END
+BillDateViewAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/BillDateViewAction.java
+END
+AddSupplierAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/AddSupplierAction.java
+END
+SupplierBrankListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/SupplierBrankListAction.java
+END
+ExchangeListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/ExchangeListAction.java
+END
+DeleteSuppliersBrandAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/DeleteSuppliersBrandAction.java
+END
+DeleteCustomersDegreeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/DeleteCustomersDegreeAction.java
+END
+DtReserveInforsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/DtReserveInforsAction.java
+END
+DeleteSupplierAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/DeleteSupplierAction.java
+END
+AddSupplierBrankAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/AddSupplierBrankAction.java
+END
+AccountsInfoListByReserveIdAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/AccountsInfoListByReserveIdAction.java
+END
+BillsCodeListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/BillsCodeListAction.java
+END
+SupplierListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/327/jiyun/src/com/tl/resource/web/baseInfo/SupplierListAction.java
+END
+GetProSortCodeListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/baseInfo/GetProSortCodeListAction.java
+END

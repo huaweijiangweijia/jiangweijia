@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder
+END
+PlanOrderListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder/PlanOrderListAction.java
+END
+DeleteOrderDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder/DeleteOrderDetail.java
+END
+PlanOrderExcel.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder/PlanOrderExcel.java
+END
+updatePlanOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder/updatePlanOrderAction.java
+END
+submitPlanOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder/submitPlanOrderAction.java
+END
+ProductListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder/ProductListAction.java
+END
+OrderDetailsListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder/OrderDetailsListAction.java
+END
+DeleteOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder/DeleteOrderAction.java
+END
+OrderDetailAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder/OrderDetailAction.java
+END
+AddPlanOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder/AddPlanOrderAction.java
+END
+PlaceOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder/PlaceOrderAction.java
+END
+ReservePlanInforListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder/ReservePlanInforListAction.java
+END
+SuppliersInforListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/planOrder/SuppliersInforListAction.java
+END

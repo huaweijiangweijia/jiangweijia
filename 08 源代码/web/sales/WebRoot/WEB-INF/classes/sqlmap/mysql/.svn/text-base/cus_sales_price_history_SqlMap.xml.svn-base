@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="culSalPriceHistory">
+
+	<typeAlias alias="cusSalPriHistoryDto"
+		type="com.tl.resource.business.dto.CurSalesPriceHistoryDto" />
+
+	<resultMap class="cusSalPriHistoryDto" id="baseResultMap">
+		<result column="product_tool_infor_id" 	property="productToolInforId" jdbcType="VARCHAR" />
+		<result column="product_name"  property="productName" jdbcType="VARCHAR"/>
+		<result column="product_code"  property="productCode" jdbcType="VARCHAR"/>
+		<result column="product_sort_code" 	property="productSortCode" jdbcType="VARCHAR" />
+		<result column="product_source"	property="productSource" jdbcType="VARCHAR" />
+		<result column="product_brand" 	property="productBrand" jdbcType="VARCHAR" />
+		<result column="brand_code"  	property="brandCode" jdbcType="VARCHAR"/>
+		<result column="sale_price" 	property="salePrice"  jdbcType="DECIMAL"/>	
+		<result column="stock_price"  	property="stockPrice" jdbcType="DECIMAL"/>	
+		<result column="stock_price_date"  property="stockPriceDate" jdbcType="VARCHAR"/>
+		<result column="sale_price_date"  property="salePriceDate" jdbcType="VARCHAR"/>
+	</resultMap>
+	
+	<resultMap class="cusSalPriHistoryDto" extends="baseResultMap" id="extendBaseResultMap">
+		<result column="id" property="id" jdbcType="VARCHAR" />
+		<result column="history_price"  property="historyPrice" jdbcType="DECIMAL"/>
+		<result column="rebate"  property="rebate" jdbcType="DECIMAL"/>
+		<result column="net_price"  property="netPrice" jdbcType="DECIMAL"/>
+		<result column="user_name"  property="userName" jdbcType="VARCHAR"/>
+		<result column="customer_name"  property="customerName" jdbcType="VARCHAR"/>
+		<result column="edit_date"  property="editDate" jdbcType="DATETIME"/>
+		<result column="status"  property="status" jdbcType="INT"/>
+		<result column="quotation_code"  property="quotationCode" jdbcType="VARCHAR"/>
+	</resultMap>
+	
+	<!-- 根据条件获取已销售产品报价信息 -->
+	<select id="getCusSalesHistoryProductByPage"
+		parameterClass="java.util.Map" resultClass="cusSalPriHistoryDto"
+		resultMap="baseResultMap">
+		<![CDATA[
+			SELECT i.* , d.sale_price_date, sph.history_price AS sale_price FROM    	
+			(SELECT  id AS product_tool_infor_id , product_name , product_code , product_sort_code , 
+			    			product_source , product_brand , brand_code, 
+			    			stock_price , stock_price_date 
+			    	FROM    t_product_tools_infor t  
+			    	WHERE   t.parent_id = 'root'
+			    	
+			    	]]>
+			<isNotEmpty prepend="and" property="productName">
+				t.product_name like '%$productName$%'
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="productCode">
+				t.product_code like '%$productCode$%'
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="productSort">
+				t.product_sort_code like '%$productSort$%'
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="brandCode">
+				t.brand_code like '%$brandCode$%'
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="productBrand">
+				t.product_brand like '%$productBrand$%'
+			</isNotEmpty>
+			<isNotEmpty property="sort" >
+				<![CDATA[
+				     order by $sort$ $dir$
+				]]>
+			</isNotEmpty>
+			<![CDATA[
+			  LIMIT #start#,#limit#) i 
+			    	 
+			    LEFT JOIN (    
+					SELECT MAX(t.sale_price_date) AS sale_price_date, t.product_brand 
+					FROM t_sales_price_history t    
+					WHERE t.sale_price_date <= (SELECT CURDATE())  AND t.product_brand IS NOT NULL      
+					GROUP BY t.product_brand ORDER BY t.sale_price_date DESC
+				) d  ON  i.product_brand=d.product_brand 
+        
+        		LEFT JOIN  t_sales_price_history sph 
+        		ON i.product_tool_infor_id = sph.product_tool_infor_id  
+        			AND sph.sale_price_date = d.sale_price_date
+			
+		]]>
+   
+	</select>
+
+	<!-- 获取某种已销售产品信息 -->
+	<select id="getCusSalesHistoryProductByPageAndProductId"
+		parameterClass="java.util.Map" resultClass="cusSalPriHistoryDto"
+		resultMap="extendBaseResultMap">
+		
+       select t.id , tp.product_name , t.product_tool_infor_id, t.product_code , t.brand_code , t.history_price , t.rebate , tp.sale_price, tp.product_sort_code , tp.stock_price , tp.stock_price_date , tp.product_brand , tp.product_source ,
+ 				t.net_price , t.user_name , tc.customer_name, t.edit_date ,  t.sale_price_date , t.status , t.quotation_code
+  	   	from t_cus_sales_price_history t 
+		left join t_product_tools_infor tp on t.product_tool_infor_id = tp.id
+		left join t_customers_infor tc on t.customer_infor_id = tc.id
+   		where t.product_tool_infor_id = #product_tool_infor_id# 
+   		<isNotEmpty prepend="and" property="customerInforId">
+			t.customer_infor_id =  #customerInforId#
+   		</isNotEmpty>
+		<isNotEmpty prepend="and" property="customerCode">
+			tc.customer_code =  #customerCode#
+		</isNotEmpty>
+		limit #start#,#limit#
+	</select>
+
+
+	<!-- 获取已销售产品总数 -->
+	<select id="getCusSalesHistoryProductTotal"
+		resultClass="java.lang.Integer" parameterClass="java.util.Map">
+		select  count(*) from t_product_tools_infor t  
+		where  t.parent_id = 'root'
+		<isNotEmpty prepend="and" property="productName">
+				t.product_name like '%$productName$%'
+		</isNotEmpty>
+		<isNotEmpty prepend="and" property="productCode">
+				t.product_code like '%$productCode$%'
+		</isNotEmpty>
+		<isNotEmpty prepend="and" property="productSort">
+				t.product_sort_code like '%$productSort$%'
+		</isNotEmpty>
+		<isNotEmpty prepend="and" property="brandCode">
+				t.brand_code like '%$brandCode$%'
+		</isNotEmpty>
+		<isNotEmpty prepend="and" property="productBrand">
+				t.product_brand like '%$productBrand$%'
+		</isNotEmpty>
+		
+	</select>
+
+	<!-- 获取某种产品已销售总数 -->
+	<select id="getCusSalesHistoryProductTotalByProductId"
+		parameterClass="java.util.Map" resultClass="java.lang.Integer">
+		select count(*) from t_cus_sales_price_history t where
+		t.product_tool_infor_id = #product_tool_infor_id#
+		<isNotEmpty prepend="and" property="customerInforId">
+			t.customer_infor_id =  #customerInforId#
+		</isNotEmpty>
+	</select>
+
+
+
+
+</sqlMap>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="SystemRun">
+	<resultMap id="result" class="com.tl.resource.dao.pojo.SystemRun">
+		<result property="startTime" column="start_time" jdbcType="datetime"/>
+		<result property="lastResetTime" column="LAST_RESET_TIME" jdbcType="datetime"/>
+	</resultMap>
+	<select id="getStartTime" resultClass="java.sql.Timestamp">
+		select start_time from t_system_run where id=1
+	</select>
+	<select id="getLastResetTime" resultClass="java.sql.Timestamp">
+		select LAST_RESET_TIME from system_run where id=1
+	</select>
+	<select id="getSystemRunInfo" resultMap="result">
+		select start_time,LAST_RESET_TIME from system_run where id=1
+	</select>
+	<update id="updateLastResetTime" parameterClass="String">
+		update system_run set LAST_RESET_TIME = #date:VARCHAR#
+	</update>
+	
+	<update id="updateStartTime" parameterClass="String">
+		update system_run set start_time = #date:VARCHAR#
+	</update>
+</sqlMap>

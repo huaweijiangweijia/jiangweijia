@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+   http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+	default-autowire="byType">
+
+	<bean name="/reserveOrder/listAction" class="com.tl.resource.web.reserveOrder.ReserveOrderListAction">
+		<property name="reserveOrderServiceImpl">
+			<ref bean="ReserveOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/reserveOrder/orderDetail" class="com.tl.resource.web.reserveOrder.OrderDetailAction">
+		<property name="reserveOrderServiceImpl">
+			<ref bean="ReserveOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/reserveOrder/orderDetailsList" class="com.tl.resource.web.reserveOrder.OrderDetailsListAction">
+		<property name="reserveOrderServiceImpl">
+			<ref bean="ReserveOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/reserveOrder/suppliersInforList" class="com.tl.resource.web.reserveOrder.SuppliersInforListAction">
+		<property name="reserveOrderServiceImpl">
+			<ref bean="ReserveOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/reserveOrder/addOrder" class="com.tl.resource.web.reserveOrder.AddReserveOrderAction">
+		<property name="reserveOrderServiceImpl">
+			<ref bean="ReserveOrderServiceImpl"/>
+		</property>
+		<property name="billsCodeDefService">
+			<ref bean="BillsCodeDefService"/>
+		</property>
+	</bean>
+	
+	<bean name="/reserveOrder/updateOrder" class="com.tl.resource.web.reserveOrder.updateReservOrderAction">
+		<property name="reserveOrderServiceImpl">
+			<ref bean="ReserveOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/reserveOrder/deleteOrder" class="com.tl.resource.web.reserveOrder.DeleteOrderAction">
+		<property name="reserveOrderServiceImpl">
+			<ref bean="ReserveOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/reserveOrder/deleteOrderDetail" class="com.tl.resource.web.reserveOrder.DeleataOrderDetail">
+		<property name="reserveOrderServiceImpl">
+			<ref bean="ReserveOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/reserveOrder/productList" class="com.tl.resource.web.reserveOrder.ProductListAction">
+		<property name="reserveOrderServiceImpl">
+			<ref bean="ReserveOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/reserveOrder/submitAudit" class="com.tl.resource.web.reserveOrder.submitReserveOrderAction">
+		<property name="auditService">
+			<ref bean="auditService"/>
+		</property>
+	</bean>
+	
+	<bean name="/reserveOrder/placeOrder" class="com.tl.resource.web.reserveOrder.PlaceOrderAction">
+		<property name="reserveOrderServiceImpl">
+			<ref bean="ReserveOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/reserveOrder/currencyList" class="com.tl.resource.web.reserveOrder.GetCurrencyNameAction">
+		<property name="reserveOrderServiceImpl">
+			<ref bean="ReserveOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/reserveOrder/orderExcel" class="com.tl.resource.web.reserveOrder.ReservOrderExcel">
+		<property name="reserveOrderServiceImpl">
+			<ref bean="ReserveOrderServiceImpl"/>
+		</property>
+		<property name="orderExcelImp">
+			<ref bean="orderExcel"/>
+		</property>
+	</bean>
+</beans>

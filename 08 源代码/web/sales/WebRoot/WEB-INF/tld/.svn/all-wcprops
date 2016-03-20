@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/sales/!svn/ver/19/jiyun/WebRoot/WEB-INF/tld
+END
+struts-template.tld
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sales/!svn/ver/19/jiyun/WebRoot/WEB-INF/tld/struts-template.tld
+END
+struts-logic.tld
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sales/!svn/ver/19/jiyun/WebRoot/WEB-INF/tld/struts-logic.tld
+END
+toolType.tld
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sales/!svn/ver/19/jiyun/WebRoot/WEB-INF/tld/toolType.tld
+END
+c.tld
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sales/!svn/ver/19/jiyun/WebRoot/WEB-INF/tld/c.tld
+END
+struts-tiles.tld
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sales/!svn/ver/19/jiyun/WebRoot/WEB-INF/tld/struts-tiles.tld
+END
+struts-nested.tld
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sales/!svn/ver/19/jiyun/WebRoot/WEB-INF/tld/struts-nested.tld
+END
+struts-html.tld
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sales/!svn/ver/19/jiyun/WebRoot/WEB-INF/tld/struts-html.tld
+END
+struts-bean.tld
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sales/!svn/ver/19/jiyun/WebRoot/WEB-INF/tld/struts-bean.tld
+END

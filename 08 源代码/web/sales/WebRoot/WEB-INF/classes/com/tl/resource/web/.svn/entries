@@ -1,0 +1,178 @@
+8
+
+dir
+804
+http://125.76.249.115:8080/svn/sales/jiyun/src/com/tl/resource/web
+http://125.76.249.115:8080/svn/sales
+
+
+
+2015-04-02T00:03:38.815205Z
+659
+lcc
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+081e45d7-d262-1141-abe1-e9a051cbb99e
+
+quotation
+dir
+
+delivery
+dir
+
+DataBackupImpAction.java
+file
+
+
+
+
+2015-08-26T03:44:37.859375Z
+e66b78c57b1320e83722f5428c434bf9
+2014-09-15T01:48:28.148742Z
+19
+lv
+
+upload
+dir
+
+trySelfOrder
+dir
+
+selfOrder
+dir
+
+assessment
+dir
+
+listener
+dir
+
+IndexAction.java
+file
+
+
+
+
+2015-08-26T03:44:37.875000Z
+13f4cc56c9b070015129c15bc6afb6b2
+2015-04-02T00:03:38.815205Z
+659
+lcc
+
+reservePlan
+dir
+
+planOrder
+dir
+
+baseInfo
+dir
+
+LoginAction.java
+file
+
+
+
+
+2015-08-26T03:44:37.875000Z
+9ca5feff1647e1c6e466b0ee9844fe60
+2015-04-02T00:03:38.815205Z
+659
+lcc
+
+LogoutAction.java
+file
+
+
+
+
+2015-08-26T03:44:37.890625Z
+4f084d4c9c18e94219b04777fca80c0e
+2015-02-07T07:19:43.258957Z
+308
+lcc
+
+scheduleOrder
+dir
+
+manage
+dir
+
+notepad
+dir
+
+toolsInfor
+dir
+
+arrival
+dir
+
+scheduleSelfOrder
+dir
+
+SystemUpdateAction.java
+file
+
+
+
+
+2015-08-26T03:44:37.890625Z
+858f18af90cfe37a0e36efe2145cf920
+2014-09-15T01:48:28.148742Z
+19
+lv
+
+audit
+dir
+
+WaitWorksInforAction.java
+file
+
+
+
+
+2015-08-26T03:44:37.890625Z
+02dc9b36b168c79a4e82b9dde8e4b724
+2015-02-07T07:19:43.258957Z
+308
+lcc
+
+InputCheckCodeAction.java
+file
+
+
+
+
+2015-08-26T03:44:37.906250Z
+fc411b0c25110f96924b16be7ea974a5
+2015-04-02T00:03:38.815205Z
+659
+lcc
+
+reserveOrder
+dir
+
+contractOrder
+dir
+
+tryOrder
+dir
+
+outStock
+dir
+
+contract
+dir
+

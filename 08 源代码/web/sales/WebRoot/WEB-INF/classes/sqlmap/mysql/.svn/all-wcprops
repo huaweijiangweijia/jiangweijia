@@ -1,0 +1,497 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sales/!svn/ver/319/jiyun/config/sqlmap/mysql
+END
+suppliers_brank_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/suppliers_brank_SqlMap.xml
+END
+t_delivery_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_delivery_infor_SqlMap.xml
+END
+t_customers_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_customers_infor_SqlMap.xml
+END
+t_product_arrival_detail_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_product_arrival_detail_SqlMap.xml
+END
+t_suppliers_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_suppliers_infor_SqlMap.xml
+END
+t_notepad_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_notepad_SqlMap.xml
+END
+t_audit_instance_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_audit_instance_SqlMap.xml
+END
+quocode_tree_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/quocode_tree_SqlMap.xml
+END
+order_price_history_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/order_price_history_SqlMap.xml
+END
+t_notepad_type_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_notepad_type_SqlMap.xml
+END
+t_product_tools_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_product_tools_infor_SqlMap.xml
+END
+t_contract_product_detail_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_contract_product_detail_SqlMap.xml
+END
+t_customers_degree_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_customers_degree_SqlMap.xml
+END
+cus_sales_price_history_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/cus_sales_price_history_SqlMap.xml
+END
+t_rebate_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_rebate_SqlMap.xml
+END
+t_work_trust_detail_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_work_trust_detail_SqlMap.xml
+END
+t_audit_type_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_audit_type_SqlMap.xml
+END
+t_tax_rate_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_tax_rate_SqlMap.xml
+END
+t_audit_content_flow_detail_gx_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_audit_content_flow_detail_gx_SqlMap.xml
+END
+LogInfo4Mysql.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/LogInfo4Mysql.xml
+END
+t_out_stock_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_out_stock_infor_SqlMap.xml
+END
+t_contract_project_sort_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_contract_project_sort_infor_SqlMap.xml
+END
+t_audit_instance_history_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_audit_instance_history_SqlMap.xml
+END
+t_order_price_history_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_order_price_history_SqlMap.xml
+END
+t_quotation_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/319/jiyun/config/sqlmap/mysql/t_quotation_infor_SqlMap.xml
+END
+t_work_trust_record_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_work_trust_record_SqlMap.xml
+END
+t_departments_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_departments_infor_SqlMap.xml
+END
+t_roles_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_roles_SqlMap.xml
+END
+t_cus_sales_price_history_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_cus_sales_price_history_SqlMap.xml
+END
+t_product_brand_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_product_brand_SqlMap.xml
+END
+t_modules_def_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_modules_def_SqlMap.xml
+END
+t_audit_history_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_audit_history_SqlMap.xml
+END
+sales_price_history_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/sales_price_history_SqlMap.xml
+END
+invoice_detail_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/invoice_detail_SqlMap.xml
+END
+t_out_stock_detail_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_out_stock_detail_SqlMap.xml
+END
+t_product_arrival_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_product_arrival_infor_SqlMap.xml
+END
+t_order_detail_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_order_detail_SqlMap.xml
+END
+bill_document_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/bill_document_SqlMap.xml
+END
+t_product_source_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_product_source_SqlMap.xml
+END
+quotation_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/quotation_SqlMap.xml
+END
+t_company_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_company_infor_SqlMap.xml
+END
+salesPriceHistoryProDto.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/salesPriceHistoryProDto.xml
+END
+t_delivery_detail_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_delivery_detail_SqlMap.xml
+END
+t_quotation_product_detail_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_quotation_product_detail_SqlMap.xml
+END
+t_resource_purview_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_resource_purview_SqlMap.xml
+END
+t_sales_price_history_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_sales_price_history_SqlMap.xml
+END
+t_contract_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/240/jiyun/config/sqlmap/mysql/t_contract_infor_SqlMap.xml
+END
+t_roles_modules_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_roles_modules_SqlMap.xml
+END
+t_quotation_project_sort_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_quotation_project_sort_infor_SqlMap.xml
+END
+t_audit_flow_detail_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_audit_flow_detail_SqlMap.xml
+END
+t_audit_content_audit_inst_gx_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_audit_content_audit_inst_gx_SqlMap.xml
+END
+t_reserve_plan_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_reserve_plan_infor_SqlMap.xml
+END
+audit_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/audit_SqlMap.xml
+END
+SystemRun4Mysql.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/SystemRun4Mysql.xml
+END
+t_product_sort_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_product_sort_SqlMap.xml
+END
+t_assessment_custormer_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_assessment_custormer_SqlMap.xml
+END
+t_audit_flow_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_audit_flow_infor_SqlMap.xml
+END
+t_exchange_rate_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_exchange_rate_SqlMap.xml
+END
+contract_view_panel_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/contract_view_panel_SqlMap.xml
+END
+t_audit_batch_record_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_audit_batch_record_SqlMap.xml
+END
+t_audit_content_audit_history_gx_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_audit_content_audit_history_gx_SqlMap.xml
+END
+t_users_roles_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_users_roles_SqlMap.xml
+END
+t_assessment_supplier_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_assessment_supplier_SqlMap.xml
+END
+t_contract_accounts_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_contract_accounts_infor_SqlMap.xml
+END
+t_accounts_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_accounts_infor_SqlMap.xml
+END
+t_bills_code_def_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_bills_code_def_SqlMap.xml
+END
+t_invoice_detail_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_invoice_detail_SqlMap.xml
+END
+company_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/company_infor_SqlMap.xml
+END
+accessories_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/accessories_SqlMap.xml
+END
+quotation_detail_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/quotation_detail_SqlMap.xml
+END
+order_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/order_infor_SqlMap.xml
+END
+order_pro_tree_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/order_pro_tree_SqlMap.xml
+END
+t_suppliers_brand_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_suppliers_brand_SqlMap.xml
+END
+pro_tree_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/pro_tree_SqlMap.xml
+END
+degree_rebate_productSort_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/degree_rebate_productSort_SqlMap.xml
+END
+t_accessories_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_accessories_SqlMap.xml
+END
+t_invoice_info_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/240/jiyun/config/sqlmap/mysql/t_invoice_info_SqlMap.xml
+END
+t_order_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/240/jiyun/config/sqlmap/mysql/t_order_infor_SqlMap.xml
+END
+t_reserve_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_reserve_infor_SqlMap.xml
+END
+t_user_infor_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_user_infor_SqlMap.xml
+END
+contract_product_detail_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/contract_product_detail_SqlMap.xml
+END
+t_audit_content_def_SqlMap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/config/sqlmap/mysql/t_audit_content_def_SqlMap.xml
+END

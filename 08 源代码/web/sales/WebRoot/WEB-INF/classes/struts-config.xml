@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<global-exceptions>
+		<exception key="errors.detail"
+			type="com.tl.common.exception.ApplicationException"
+			path="/pages/common/exception.jsp" scope="request"
+			handler="com.tl.common.exception.ApplicationExceptionHandler" />
+		<exception key="errors.nopermission"
+			type="com.tl.common.exception.NoPermissionException"
+			path="/pages/manage/logout.jsp" scope="request"
+			handler="com.tl.common.exception.ApplicationExceptionHandler" />
+	</global-exceptions>
+	<action-mappings>
+		<action path="/loginAction" scope="request" validate="false" parameter="ffc">
+			<forward name="loginIn" path="/indexAction.do" redirect="true"/>
+			<forward name="loginFail" path="/errorRedirect.jsp"/>
+		</action>
+		<action path="/WaitWorksInforAction" scope="request" validate="false" parameter="ffc"></action>
+		<action path="/InputCheckCodeAction" scope="request" validate="false" parameter="m"></action>
+		<action path="/SystemUpdateAction" scope="request" validate="false" parameter="m"></action>
+		<action path="/LogoutAction" scope="request" validate="false" parameter="m"/>
+		<action path="/DataBackupImpAction" scope="request" validate="false" parameter="m"/>
+		<action path="/indexAction" scope="request" validate="false">
+			<forward  name="manageSuccess" path="/pages/manage/menus.jsp" />
+			<forward  name="serviceSuccess" path="/pages/main_menus.jsp" />
+		</action>
+	</action-mappings>
+	<message-resources parameter="MessageResources"></message-resources>
+
+</struts-config>
+

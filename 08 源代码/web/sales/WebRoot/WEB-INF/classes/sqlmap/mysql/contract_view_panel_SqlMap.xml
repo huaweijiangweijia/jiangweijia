@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="contract_view_panel">
+  <resultMap class="com.tl.resource.business.dto.ContractViewPanelDto" id="ibatorgenerated_BaseResultMap">
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="contract_code" jdbcType="VARCHAR" property="contractCode" />
+    <result column="seller_name" jdbcType="VARCHAR" property="sellerName" />
+    <result column="currency_name" jdbcType="VARCHAR" property="currencyName" />
+    <result column="customer_code" jdbcType="VARCHAR" property="customerCode" />
+    <result column="customer_name" jdbcType="VARCHAR" property="customerName" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="final_money" jdbcType="DECIMAL" property="finalMoney" />
+    <result column="money" jdbcType="DECIMAL" property="money" />
+    <result column="edit_date" jdbcType="TIMESTAMP" property="editDate" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="own_contact_person" jdbcType="VARCHAR" property="ownContactPerson" />
+    <result column="contract_amount" jdbcType="DECIMAL" property="contractAmount" />
+    <result column="delivery_amount" jdbcType="DECIMAL" property="deliveryAmount" />
+    <result column="order_amount" jdbcType="DECIMAL" property="orderAmount" />
+    <result column="out_amount" jdbcType="DECIMAL" property="outAmount" />
+    <result column="tq_out_amount" jdbcType="DECIMAL" property="tqOutAmount" />
+    <result column="own_contact_person" jdbcType="VARCHAR" property="ownContactPerson" />
+    <result column="invoice_money" jdbcType="DECIMAL" property="invoiceMoney" />
+    <result column="file_count" jdbcType="INTEGER" property="fileCount" />
+    <result column="memo" jdbcType="VARCHAR" property="memo" />
+    <result column="tax_rate" jdbcType="DECIMAL" property="taxRate" />
+    <result column="urgent_level" jdbcType="VARCHAR" property="urgentLevel" />
+    <result column="sign_date" jdbcType="VARCHAR" property="signDate" />
+  </resultMap>
+
+<select id="contractInforViewSql" parameterClass="map" resultMap="ibatorgenerated_BaseResultMap">
+select fi.*,ifnull(fi2.invoice_money,0) invoice_money from (
+select aaaaa.*,ifnull(bbbbb.money,0) money from ( 
+select aaaa.*,ifnull(bbbb.delivery_amount,0) delivery_amount from (
+	select aaa.*,ifnull(bbb.order_amount,0) order_amount from (
+		select aa.*,ifnull(bb.out_amount,0) out_amount from (
+			select a.*,ifnull(b.tq_out_amount,0) tq_out_amount from (
+					select ci.*,cond.amount contract_amount
+					from (
+							select ffc.*,count(ta.id) file_count from (
+							SELECT tt.* FROM (
+								SELECT cinfor.id,cinfor.tax_rate,cinfor.own_contact_person,cinfor.contract_code,cinfor.seller_name,cinfor.currency_name,
+								cinfor.customer_code,cinfor.customer_name,cinfor.status,cinfor.final_money,cinfor.edit_date,cinfor.user_id,
+								cinfor.user_name,cinfor.memo,trp.id trpid,cinfor.urgent_level,cinfor.sign_date
+								FROM t_contract_infor cinfor 
+								LEFT JOIN 
+								(
+								SELECT trp2.id,trp2.target_user_id FROM 
+								t_resource_purview trp2 WHERE trp2.user_id = #currUserId# and trp2.resource_type = 2
+								) trp
+								ON cinfor.user_id = trp.target_user_id
+								) tt,t_customers_infor cus 
+								WHERE tt.customer_code = cus.customer_code
+								AND (tt.trpid IS NOT NULL OR cus.own_contact_person_id = #currUserId#) 
+							) ffc left join t_accessories ta
+							on ffc.id = ta.business_id
+							group by id
+						) ci,(
+							select sum(amount) amount,cpd.contract_infor_id from t_contract_product_detail cpd
+							where cpd.parent_tools_id = 'root'
+							group by cpd.contract_infor_id
+					    ) cond
+			where ci.id = cond.contract_infor_id
+			<isNotEmpty prepend="and" property="contractCode" >
+			 ci.contract_code like '%$contractCode$%'
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="userName" >
+			 ci.user_name = #userName#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="status" >
+			 ci.status = #status#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="customerName" >
+			 ci.customer_name like '%$customerName$%'
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="ownContactPerson" >
+			 ci.own_contact_person = #ownContactPerson#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="startDate" >
+			 <![CDATA[DATE_FORMAT(ci.edit_date,'%Y-%m-%d') >= '$startDate$']]>
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="endDate" >
+			 <![CDATA[DATE_FORMAT(ci.edit_date,'%Y-%m-%d') <= '$endDate$']]>
+			</isNotEmpty>
+			) a left join (
+					
+					select sum(si.amount) tq_out_amount,oi.contract_id
+					from t_out_stock_detail si,t_out_stock_infor oi 
+					where 
+					si.out_stock_infor_id = oi.id
+					and oi.out_stock_type in(1,5)
+					and oi.status = 1
+					and si.parent_tools_id = 'root'
+					group by oi.contract_id
+			) b on a.id = b.contract_id
+		) aa left join 
+		(
+			
+			select sum(si.amount) out_amount,oi.contract_id
+			from t_out_stock_detail si,t_out_stock_infor oi 
+			where 
+			si.out_stock_infor_id = oi.id
+			and oi.out_stock_type in (1,2,4,5)
+			and oi.status = 1
+			and si.parent_tools_id = 'root'
+			group by oi.contract_id
+		) bb on aa.id = bb.contract_id
+	) aaa left join 
+	(
+		
+		select sum(de.order_amount) order_amount,orderi.contract_code
+		from t_order_detail de,t_order_infor orderi
+		where 
+		de.stock_order_infor_id = orderi.id
+		and 
+		orderi.status in (4,5)
+		and de.parent_tools_id = 'root'
+		group by orderi.contract_code
+	) bbb
+	on aaa.contract_code = bbb.contract_code
+) aaaa left join 
+(
+	
+	select sum(dd.amount) delivery_amount,di.contract_code
+	from t_delivery_detail dd, t_delivery_infor di
+	where dd.delivery_infor_id = di.id
+	and 
+	di.delivery_type in (0,1)
+	and 
+	di.status = 2
+	and dd.parent_tools_id = 'root'
+	group by di.contract_code
+) bbbb on  aaaa.contract_code = bbbb.contract_code
+) aaaaa left join 
+(
+select sum(cai.money) money, cai.contract_infor_id 
+from t_contract_accounts_infor cai 
+where cai.status = 1
+<isNotEmpty prepend="and" property="accountStartDate" >
+<![CDATA[DATE_FORMAT(cai.edit_date,'%Y-%m-%d') >= '$accountStartDate$']]>
+</isNotEmpty>
+<isNotEmpty prepend="and" property="accountEndDate" >
+<![CDATA[DATE_FORMAT(cai.edit_date,'%Y-%m-%d') <= '$accountEndDate$']]>
+</isNotEmpty>
+group by cai.contract_infor_id
+) bbbbb
+on aaaaa.id = bbbbb.contract_infor_id
+) fi left join 
+(
+    select infor.contract_id,sum(det.money) invoice_money 
+    from t_invoice_info infor,t_invoice_detail det 
+	where infor.id = det.invoice_info_id 
+<isNotEmpty prepend="and" property="invoiceStartDate" >
+<![CDATA[DATE_FORMAT(det.edit_date,'%Y-%m-%d') >= '$invoiceStartDate$']]>
+</isNotEmpty>
+<isNotEmpty prepend="and" property="invoiceEndDate" >
+<![CDATA[DATE_FORMAT(det.edit_date,'%Y-%m-%d') <= '$invoiceEndDate$']]>
+</isNotEmpty>
+	group by contract_id
+) fi2
+on fi.id = fi2.contract_id
+where 1 = 1
+
+<isEqual prepend="and" property="orderStatus" compareValue="0">
+	<![CDATA[
+        contract_Amount - tq_Out_Amount > 0 and ifnull(order_Amount,0) = 0
+    ]]>
+</isEqual>
+<isEqual prepend="and" property="orderStatus" compareValue="1">
+	<![CDATA[
+		contract_Amount - tq_Out_Amount > order_Amount and order_Amount > 0
+	 ]]>
+</isEqual>
+<isEqual prepend="and" property="orderStatus" compareValue="2">
+	<![CDATA[
+		contract_Amount - tq_Out_Amount <= order_Amount
+	 ]]>
+</isEqual>
+
+<isEqual prepend="and" property="orderArrivalStatus" compareValue="0">
+	<![CDATA[
+        ifnull(out_Amount,0) - ifnull(tq_Out_Amount,0) = 0
+    ]]>
+</isEqual>
+<isEqual prepend="and" property="orderArrivalStatus" compareValue="1">
+	<![CDATA[
+		out_Amount - tq_Out_Amount < order_Amount and out_Amount - tq_Out_Amount > 0
+	 ]]>
+</isEqual>
+<isEqual prepend="and" property="orderArrivalStatus" compareValue="2">
+	<![CDATA[
+		out_Amount - tq_Out_Amount >= order_Amount and out_Amount - tq_Out_Amount > 0
+	 ]]>
+</isEqual>
+
+<isEqual prepend="and" property="allArrivalStatus" compareValue="0">
+	<![CDATA[
+        ifnull(out_Amount,0) = 0
+    ]]>
+</isEqual>
+<isEqual prepend="and" property="allArrivalStatus" compareValue="1">
+	<![CDATA[
+		out_Amount < contract_Amount and out_Amount > 0
+	 ]]>
+</isEqual>
+<isEqual prepend="and" property="allArrivalStatus" compareValue="2">
+	<![CDATA[
+		out_Amount >= contract_Amount
+	 ]]>
+</isEqual>
+
+<isEqual prepend="and" property="deliveryStatus" compareValue="0">
+	<![CDATA[
+        ifnull(delivery_Amount,0) = 0
+    ]]>
+</isEqual>
+<isEqual prepend="and" property="deliveryStatus" compareValue="1">
+	<![CDATA[
+		delivery_Amount < contract_Amount and delivery_Amount > 0
+	 ]]>
+</isEqual>
+<isEqual prepend="and" property="deliveryStatus" compareValue="2">
+	<![CDATA[
+		delivery_Amount >= contract_Amount
+	 ]]>
+</isEqual>
+
+<isEqual prepend="and" property="contractAccountStatus" compareValue="0">
+	<![CDATA[
+        ifnull(money,0) = 0
+    ]]>
+</isEqual>
+<isEqual prepend="and" property="contractAccountStatus" compareValue="1">
+	<![CDATA[
+		money < final_Money and  money > 0
+	 ]]>
+</isEqual>
+<isEqual prepend="and" property="contractAccountStatus" compareValue="2">
+	<![CDATA[
+		money >= final_Money
+	 ]]>
+</isEqual>
+
+<isEqual prepend="and" property="invoiceStatus" compareValue="0">
+	<![CDATA[
+        ifnull(invoice_money,0) = 0
+    ]]>
+</isEqual>
+<isEqual prepend="and" property="invoiceStatus" compareValue="1">
+	<![CDATA[
+		invoice_money < final_Money and  invoice_money > 0
+	 ]]>
+</isEqual>
+<isEqual prepend="and" property="invoiceStatus" compareValue="2">
+	<![CDATA[
+		invoice_money >= final_Money
+	 ]]>
+</isEqual>
+<isNotEmpty property="sort" >
+order by $sort$ $dir$
+</isNotEmpty>
+<isEmpty property="sort" >
+order by edit_date desc
+</isEmpty>
+limit #startIndex#, #pageSize# 			
+  </select>
+
+
+  <select id="contractInforViewCountSql" parameterClass="java.util.Map" resultClass="java.util.HashMap">
+  select count(*) cnt,sum(final_money) final_money,sum(delivery_money) delivery_money,sum(invoice_money) invoice_money,sum(money) money from (
+  select fi.*,ifnull(fi2.invoice_money,0) invoice_money from (
+   	 select aaaaa.*,ifnull(bbbbb.money,0) money from ( 
+	select aaaa.*,ifnull(bbbb.delivery_amount,0) delivery_amount,ifnull(bbbb.delivery_money,0) delivery_money from (
+	select aaa.*,ifnull(bbb.order_amount,0) order_amount from (
+		select aa.*,ifnull(bb.out_amount,0) out_amount from (
+			select a.*,ifnull(b.tq_out_amount,0) tq_out_amount from (
+					select ci.*,cond.amount contract_amount
+					from (
+							select ffc.*,count(ta.id) file_count from (
+							select tt.* from (
+							SELECT cinfor.id,cinfor.own_contact_person,cinfor.contract_code,cinfor.seller_name,cinfor.currency_name,
+								cinfor.customer_code,cinfor.customer_name,cinfor.status,cinfor.final_money,cinfor.edit_date,cinfor.user_id,
+								cinfor.user_name,cinfor.memo,trp.id trpid
+								FROM t_contract_infor cinfor 
+								LEFT JOIN 
+								(
+								SELECT trp2.id,trp2.target_user_id FROM 
+								t_resource_purview trp2 WHERE trp2.user_id = #currUserId# and trp2.resource_type = 2
+								) trp
+								ON cinfor.user_id = trp.target_user_id
+								) tt,t_customers_infor cus 
+								WHERE tt.customer_code = cus.customer_code
+								AND (tt.trpid IS NOT NULL OR cus.own_contact_person_id = #currUserId#) 
+							) ffc left join t_accessories ta
+							on ffc.id = ta.business_id
+							group by id
+						) ci,(
+							select sum(amount) amount,cpd.contract_infor_id from t_contract_product_detail cpd
+							where cpd.parent_tools_id = 'root'
+							group by cpd.contract_infor_id
+					) cond
+			where ci.id = cond.contract_infor_id
+			<isNotEmpty prepend="and" property="contractCode" >
+			 ci.contract_code like '%$contractCode$%'
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="userName" >
+			 ci.user_name = #userName#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="status" >
+			 ci.status = #status#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="customerName" >
+			 ci.customer_name like '%$customerName$%'
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="ownContactPerson" >
+			 ci.own_contact_person = #ownContactPerson#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="startDate" >
+			 <![CDATA[DATE_FORMAT(ci.edit_date,'%Y-%m-%d') >= '$startDate$']]>
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="endDate" >
+			 <![CDATA[DATE_FORMAT(ci.edit_date,'%Y-%m-%d') <= '$endDate$']]>
+			</isNotEmpty>
+			) a left join (
+					
+					select sum(si.amount) tq_out_amount,oi.contract_id
+					from t_out_stock_detail si,t_out_stock_infor oi 
+					where 
+					si.out_stock_infor_id = oi.id
+					and oi.out_stock_type in (1,5)
+					and oi.status = 1
+					and si.parent_tools_id = 'root'
+					group by oi.contract_id
+			) b on a.id = b.contract_id
+		) aa left join 
+		(
+			
+			select sum(si.amount) out_amount,oi.contract_id
+			from t_out_stock_detail si,t_out_stock_infor oi 
+			where 
+			si.out_stock_infor_id = oi.id
+			and oi.out_stock_type in (1,2,4,5)
+			and oi.status = 1
+			and si.parent_tools_id = 'root'
+			group by oi.contract_id
+		) bb on aa.id = bb.contract_id
+	) aaa left join 
+	(
+		
+		select sum(de.order_amount) order_amount,orderi.contract_code
+		from t_order_detail de,t_order_infor orderi
+		where 
+		de.stock_order_infor_id = orderi.id
+		and 
+		orderi.status in (4,5)
+		and de.parent_tools_id = 'root'
+		group by orderi.contract_code
+	) bbb
+	on aaa.contract_code = bbb.contract_code
+) aaaa left join 
+(
+	select sum(dd.amount) delivery_amount,di.contract_code,sum(dd.amount * dd.net_price) delivery_money
+	from t_delivery_detail dd, t_delivery_infor di
+	where dd.delivery_infor_id = di.id
+	and 
+	di.delivery_type in (0,1)
+	and 
+	di.status = 2
+	and dd.parent_tools_id = 'root'
+	group by di.contract_code
+) bbbb on  aaaa.contract_code = bbbb.contract_code
+) aaaaa left join 
+(
+select sum(cai.money) money, cai.contract_infor_id 
+from t_contract_accounts_infor cai 
+where cai.status = 1
+<isNotEmpty prepend="and" property="accountStartDate" >
+<![CDATA[DATE_FORMAT(cai.edit_date,'%Y-%m-%d') >= '$accountStartDate$']]>
+</isNotEmpty>
+<isNotEmpty prepend="and" property="accountEndDate" >
+<![CDATA[DATE_FORMAT(cai.edit_date,'%Y-%m-%d') <= '$accountEndDate$']]>
+</isNotEmpty>
+group by cai.contract_infor_id
+) bbbbb
+on aaaaa.id = bbbbb.contract_infor_id
+) fi left join 
+(
+    select infor.contract_id,sum(det.money) invoice_money from t_invoice_info infor,t_invoice_detail det 
+	where infor.id = det.invoice_info_id 
+<isNotEmpty prepend="and" property="invoiceStartDate" >
+<![CDATA[DATE_FORMAT(det.edit_date,'%Y-%m-%d') >= '$invoiceStartDate$']]>
+</isNotEmpty>
+<isNotEmpty prepend="and" property="invoiceEndDate" >
+<![CDATA[DATE_FORMAT(det.edit_date,'%Y-%m-%d') <= '$invoiceEndDate$']]>
+</isNotEmpty>
+	group by contract_id
+) fi2
+on fi.id = fi2.contract_id
+where 1 = 1
+
+<isEqual prepend="and" property="orderStatus" compareValue="0">
+	<![CDATA[
+        contract_Amount - tq_Out_Amount > 0 and ifnull(order_Amount,0) = 0
+    ]]>
+</isEqual>
+<isEqual prepend="and" property="orderStatus" compareValue="1">
+	<![CDATA[
+		contract_Amount - tq_Out_Amount > order_Amount and order_Amount > 0
+	 ]]>
+</isEqual>
+<isEqual prepend="and" property="orderStatus" compareValue="2">
+	<![CDATA[
+		contract_Amount - tq_Out_Amount <= order_Amount
+	 ]]>
+</isEqual>
+
+<isEqual prepend="and" property="orderArrivalStatus" compareValue="0">
+	<![CDATA[
+        ifnull(out_Amount,0) - ifnull(tq_Out_Amount,0) = 0
+    ]]>
+</isEqual>
+<isEqual prepend="and" property="orderArrivalStatus" compareValue="1">
+	<![CDATA[
+		out_Amount - tq_Out_Amount < order_Amount and out_Amount - tq_Out_Amount > 0
+	 ]]>
+</isEqual>
+<isEqual prepend="and" property="orderArrivalStatus" compareValue="2">
+	<![CDATA[
+		out_Amount - tq_Out_Amount >= order_Amount and out_Amount - tq_Out_Amount > 0
+	 ]]>
+</isEqual>
+
+<isEqual prepend="and" property="allArrivalStatus" compareValue="0">
+	<![CDATA[
+        ifnull(out_Amount,0) = 0
+    ]]>
+</isEqual>
+<isEqual prepend="and" property="allArrivalStatus" compareValue="1">
+	<![CDATA[
+		out_Amount < contract_Amount and out_Amount > 0
+	 ]]>
+</isEqual>
+<isEqual prepend="and" property="allArrivalStatus" compareValue="2">
+	<![CDATA[
+		out_Amount >= contract_Amount
+	 ]]>
+</isEqual>
+
+<isEqual prepend="and" property="deliveryStatus" compareValue="0">
+	<![CDATA[
+        ifnull(delivery_Amount,0) = 0
+    ]]>
+</isEqual>
+<isEqual prepend="and" property="deliveryStatus" compareValue="1">
+	<![CDATA[
+		delivery_Amount < contract_Amount and delivery_Amount > 0
+	 ]]>
+</isEqual>
+<isEqual prepend="and" property="deliveryStatus" compareValue="2">
+	<![CDATA[
+		delivery_Amount >= contract_Amount
+	 ]]>
+</isEqual>
+
+<isEqual prepend="and" property="contractAccountStatus" compareValue="0">
+	<![CDATA[
+        ifnull(money,0) = 0
+    ]]>
+</isEqual>
+<isEqual prepend="and" property="contractAccountStatus" compareValue="1">
+	<![CDATA[
+		money < final_Money and  money > 0
+	 ]]>
+</isEqual>
+<isEqual prepend="and" property="contractAccountStatus" compareValue="2">
+	<![CDATA[
+		money >= final_Money
+	 ]]>
+</isEqual>
+
+<isEqual prepend="and" property="invoiceStatus" compareValue="0">
+	<![CDATA[
+        ifnull(invoice_money,0) = 0
+    ]]>
+</isEqual>
+<isEqual prepend="and" property="invoiceStatus" compareValue="1">
+	<![CDATA[
+		invoice_money < final_Money and  invoice_money > 0
+	 ]]>
+</isEqual>
+<isEqual prepend="and" property="invoiceStatus" compareValue="2">
+	<![CDATA[
+		invoice_money >= final_Money
+	 ]]>
+</isEqual>
+) t
+  </select>
+  
+  
+</sqlMap>

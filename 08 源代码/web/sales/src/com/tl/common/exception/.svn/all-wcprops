@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/sales/!svn/ver/57/jiyun/src/com/tl/common/exception
+END
+ApplicationExceptionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/57/jiyun/src/com/tl/common/exception/ApplicationExceptionHandler.java
+END
+ApplicationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/57/jiyun/src/com/tl/common/exception/ApplicationException.java
+END
+ErrorCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sales/!svn/ver/57/jiyun/src/com/tl/common/exception/ErrorCode.java
+END
+NoPermissionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/common/exception/NoPermissionException.java
+END

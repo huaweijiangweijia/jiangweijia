@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder
+END
+ContractProjectSortInforListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/ContractProjectSortInforListAction.java
+END
+SelfOrderExcel.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/SelfOrderExcel.java
+END
+DeleteSelfOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/DeleteSelfOrderAction.java
+END
+submitSelfOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/submitSelfOrderAction.java
+END
+ContractListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/ContractListAction.java
+END
+OrderDetailsListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/OrderDetailsListAction.java
+END
+PlaceOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/PlaceOrderAction.java
+END
+SelfOrderListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/SelfOrderListAction.java
+END
+UpdateSelfOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/UpdateSelfOrderAction.java
+END
+DeleteSelfOrderDetailAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/DeleteSelfOrderDetailAction.java
+END
+ContractDetailPartListActioin.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/ContractDetailPartListActioin.java
+END
+ContractDetailListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/ContractDetailListAction.java
+END
+OrderDetailAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/OrderDetailAction.java
+END
+AddSelfOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/AddSelfOrderAction.java
+END
+SupplierListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/SupplierListAction.java
+END
+ContractDetailAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/selfOrder/ContractDetailAction.java
+END

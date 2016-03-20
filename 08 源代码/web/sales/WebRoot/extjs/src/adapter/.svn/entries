@@ -1,0 +1,79 @@
+8
+
+dir
+804
+http://125.76.249.115:8080/svn/sales/jiyun/WebRoot/extjs/src/adapter
+http://125.76.249.115:8080/svn/sales
+
+
+
+2014-09-15T01:48:28.148742Z
+19
+lv
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+081e45d7-d262-1141-abe1-e9a051cbb99e
+
+ext-base-dom-more.js
+file
+
+
+
+
+2015-08-26T03:43:54.953125Z
+5f13d032f5a22b769e1cd78f00df0df4
+2014-09-15T01:48:28.148742Z
+19
+lv
+
+jquery-bridge.js
+file
+
+
+
+
+2015-08-26T03:43:54.968750Z
+9dec1e207f0373e42d1bdf9d77e50c73
+2014-09-15T01:48:28.148742Z
+19
+lv
+
+core
+dir
+
+prototype-bridge.js
+file
+
+
+
+
+2015-08-26T03:43:54.984375Z
+bb74b9c1deef5c8e7057216e45d962a4
+2014-09-15T01:48:28.148742Z
+19
+lv
+
+yui-bridge.js
+file
+
+
+
+
+2015-08-26T03:43:55.000000Z
+3b2a268bcbb9c8f49758fdd49c69f661
+2014-09-15T01:48:28.148742Z
+19
+lv
+

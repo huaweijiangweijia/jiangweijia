@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage
+END
+ModulesServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/ModulesServiceImp.java
+END
+BillsCodeDefService.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/BillsCodeDefService.java
+END
+BillDocumentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/BillDocumentService.java
+END
+UsersService.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/UsersService.java
+END
+BillDocumentServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/BillDocumentServiceImpl.java
+END
+DepartmentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/DepartmentService.java
+END
+RolesService.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/RolesService.java
+END
+WorkTrustService.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/WorkTrustService.java
+END
+BillsCodeDefServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/BillsCodeDefServiceImp.java
+END
+UsersServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/UsersServiceImp.java
+END
+ModulesService.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/ModulesService.java
+END
+DepartmentServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/DepartmentServiceImp.java
+END
+RolesServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/RolesServiceImp.java
+END
+WorkTrustServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/manage/WorkTrustServiceImp.java
+END

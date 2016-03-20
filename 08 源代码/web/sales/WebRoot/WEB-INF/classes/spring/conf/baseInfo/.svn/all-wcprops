@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sales/!svn/ver/316/jiyun/config/spring/conf/baseInfo
+END
+baseInfo-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/baseInfo/baseInfo-web-spring.xml
+END
+baseInfo-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/248/jiyun/config/spring/conf/baseInfo/baseInfo-dao.xml
+END
+baseInfo-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/316/jiyun/config/spring/conf/baseInfo/baseInfo-business.xml
+END

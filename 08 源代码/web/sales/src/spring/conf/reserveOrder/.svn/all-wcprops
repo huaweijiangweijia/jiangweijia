@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sales/!svn/ver/248/jiyun/config/spring/conf/reserveOrder
+END
+reserveOrder-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/reserveOrder/reserveOrder-business.xml
+END
+reserveOrder-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/reserveOrder/reserveOrder-web-spring.xml
+END
+reserveOrder-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/248/jiyun/config/spring/conf/reserveOrder/reserveOrder-dao.xml
+END

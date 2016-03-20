@@ -1,0 +1,22 @@
+#Sat Mar 19 21:23:37 CST 2016
+eclipse.preferences.version=1
+encoding//WebRoot/js=UTF-8
+encoding//WebRoot/js/baseInfo/companyList.js=UTF-8
+encoding//WebRoot/js/baseInfo/productCorrelation/productSortList.js=UTF-8
+encoding//WebRoot/js/baseInfo/productToolsInfor.js=UTF-8
+encoding//WebRoot/js/baseInfo/toolscombox.js=UTF-8
+encoding//WebRoot/js/baseInfo/workProcedure.js=UTF-8
+encoding//WebRoot/js/common.js=UTF-8
+encoding//WebRoot/js/default.js=UTF-8
+encoding//WebRoot/js/main/menus.js=UTF-8
+encoding//WebRoot/js/out_stock/material_out_stock/out_stock_edit_win.js=UTF-8
+encoding//WebRoot/js/proToolsInfor/ImportProTools.js=UTF-8
+encoding//WebRoot/js/proToolsInfor/proTools_index.js=UTF-8
+encoding//WebRoot/js/production_plan/production_plan_edit_win.js=UTF-8
+encoding//WebRoot/js/production_plan/production_plan_list_view.js=UTF-8
+encoding//WebRoot/js/production_plan/select_process_orders.js=UTF-8
+encoding//WebRoot/js/quotation/generalQuo/statusCombox.js=UTF-8
+encoding//WebRoot/js/reserve_plan/reserve_plan_edit_win.js=UTF-8
+encoding//WebRoot/js/reserve_plan/reserve_plan_list_view.js=UTF-8
+encoding//WebRoot/js/upload/SlaveManager.js=UTF-8
+encoding/<project>=UTF-8

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+   http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+	default-autowire="byType">
+	 <bean name="/contractOrder/listAction" class="com.tl.resource.web.contractOrder.ContractOrderListAction">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/CommonAction" class="com.tl.resource.web.contractOrder.ContractOrderCommonAction" scope="prototype">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	<bean name="/contractOrder/orderDetail" class="com.tl.resource.web.contractOrder.OrderDetailAction">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/orderDetailsList" class="com.tl.resource.web.contractOrder.OrderDetailsListAction">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	
+	<bean name="/contractOrder/deleteOrder" class="com.tl.resource.web.contractOrder.DeleteContractOrderAction">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/deleteOrderDetail" class="com.tl.resource.web.contractOrder.DeleteContractOrderDetailAction">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	
+	<bean name="/contractOrder/submitAudit" class="com.tl.resource.web.contractOrder.submitContractOrderAction">
+		<property name="auditService">
+			<ref bean="auditService"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/contractList" class="com.tl.resource.web.contractOrder.ContractListAction">
+			<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/supplierList" class="com.tl.resource.web.contractOrder.SupplierListAction">
+			<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/contractDetailList" class="com.tl.resource.web.contractOrder.contractDetailListAction">
+			<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/contractDetail" class="com.tl.resource.web.contractOrder.ContractDetailAction">
+			<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/cpsiList" class="com.tl.resource.web.contractOrder.ContractProjectSortInforListAction">
+			<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/addOrder" class="com.tl.resource.web.contractOrder.AddContractOrderAction">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+		<property name="billsCodeDefService">
+			<ref bean="BillsCodeDefService"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/updateOrder" class="com.tl.resource.web.contractOrder.UpdateContractOrderAction">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/placeOrder" class="com.tl.resource.web.contractOrder.PlaceOrderAction">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/orderExcel" class="com.tl.resource.web.contractOrder.ContractOrderExcel">
+		<property name="orderExcelServcie">
+			<ref bean="OrderExcelServiceImpl" />
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/orderListExcel" class="com.tl.resource.web.contractOrder.OrderListExcelAction">
+		<property name="orderExcelServcie">
+			<ref bean="OrderExcelServiceImpl" />
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/contractOrder" class="com.tl.resource.web.contractOrder.ContractOrderAction">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	<bean name="/contractOrder/OrderTotalMoneysAction" class="com.tl.resource.web.contractOrder.OrderTotalMoneysAction">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	<bean name="/contractOrder/SupHisPriceAction" class="com.tl.resource.web.contractOrder.SupHisPriceAction">
+		<property name="proToolsInforService">
+			<ref bean="ProToolsInforServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/CmprStockPrice" class="com.tl.resource.web.contractOrder.CmprStockPrice">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/contractOrder/CancelOrder" class="com.tl.resource.web.contractOrder.CancelOrderAction">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl"/>
+		</property>
+	</bean>
+</beans>

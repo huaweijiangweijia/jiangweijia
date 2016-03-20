@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/scheduleSelfOrder
+END
+QuotationDetailListBySupplierAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/scheduleSelfOrder/QuotationDetailListBySupplierAction.java
+END
+QuotationDetailListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/scheduleSelfOrder/QuotationDetailListAction.java
+END
+submitScheduleSelfOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/scheduleSelfOrder/submitScheduleSelfOrderAction.java
+END
+OrderDetailListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/scheduleSelfOrder/OrderDetailListAction.java
+END
+productListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/scheduleSelfOrder/productListAction.java
+END
+OrderDetailAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/scheduleSelfOrder/OrderDetailAction.java
+END

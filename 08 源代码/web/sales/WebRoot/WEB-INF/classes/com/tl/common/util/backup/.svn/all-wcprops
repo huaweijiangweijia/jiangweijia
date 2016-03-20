@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/sales/!svn/ver/234/jiyun/src/com/tl/common/util/backup
+END
+JobData.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/common/util/backup/JobData.java
+END
+BackupDatabaseJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/234/jiyun/src/com/tl/common/util/backup/BackupDatabaseJob.java
+END
+ResetSerialNumberJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/common/util/backup/ResetSerialNumberJob.java
+END
+DatabaseImpUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/common/util/backup/DatabaseImpUtil.java
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit
+END
+IAuditService.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/IAuditService.java
+END
+IAuditBusinessObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/IAuditBusinessObject.java
+END
+AuditFlowDefinedServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/AuditFlowDefinedServiceImp.java
+END
+IAuditFlowDefinedService.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/IAuditFlowDefinedService.java
+END
+AuditContentServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/AuditContentServiceImp.java
+END
+IAuditContentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/IAuditContentService.java
+END
+AuditServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/AuditServiceImp.java
+END
+IAuditContentBusinessObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/IAuditContentBusinessObject.java
+END

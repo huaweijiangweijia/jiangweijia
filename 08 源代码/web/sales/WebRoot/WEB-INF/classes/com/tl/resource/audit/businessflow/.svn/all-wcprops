@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow
+END
+ScheduleSelfOrderAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/ScheduleSelfOrderAuditImp.java
+END
+GeneralQuoAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/GeneralQuoAuditImp.java
+END
+DeliveryTryToolsAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/DeliveryTryToolsAuditImp.java
+END
+ReserveOrderAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/ReserveOrderAuditImp.java
+END
+ContractOrderAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/ContractOrderAuditImp.java
+END
+TryOrderAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/TryOrderAuditImp.java
+END
+ContractInforAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/ContractInforAuditImp.java
+END
+ReserveQuoAuditImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/ReserveQuoAuditImpl.java
+END
+GenQuoNonStandAuditImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/GenQuoNonStandAuditImpl.java
+END
+DeliveryContractAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/DeliveryContractAuditImp.java
+END
+TrySelfOrderAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/TrySelfOrderAuditImp.java
+END
+SelfOrderAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/SelfOrderAuditImp.java
+END
+PlanOrderAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/PlanOrderAuditImp.java
+END
+DeliveryQuotationAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/DeliveryQuotationAuditImp.java
+END
+ScheduleOrderAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/ScheduleOrderAuditImp.java
+END
+ProjectQuoAuditImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/ProjectQuoAuditImp.java
+END
+TestCutQuoAuditImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/TestCutQuoAuditImpl.java
+END
+PrjQuoNonstandAuditImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/businessflow/PrjQuoNonstandAuditImpl.java
+END

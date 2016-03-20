@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder
+END
+ReserveOrderListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder/ReserveOrderListAction.java
+END
+ReservOrderExcel.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder/ReservOrderExcel.java
+END
+updateReservOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder/updateReservOrderAction.java
+END
+GetCurrencyNameAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder/GetCurrencyNameAction.java
+END
+submitReserveOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder/submitReserveOrderAction.java
+END
+ProductListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder/ProductListAction.java
+END
+OrderDetailsListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder/OrderDetailsListAction.java
+END
+DeleteOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder/DeleteOrderAction.java
+END
+OrderDetailAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder/OrderDetailAction.java
+END
+AddReserveOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder/AddReserveOrderAction.java
+END
+DeleataOrderDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder/DeleataOrderDetail.java
+END
+PlaceOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder/PlaceOrderAction.java
+END
+SuppliersInforListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/reserveOrder/SuppliersInforListAction.java
+END

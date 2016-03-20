@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sales/!svn/ver/316/jiyun/config/spring/conf/quotation/generalQuo
+END
+generalQuo-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/248/jiyun/config/spring/conf/quotation/generalQuo/generalQuo-dao.xml
+END
+generalQuo-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sales/!svn/ver/316/jiyun/config/spring/conf/quotation/generalQuo/generalQuo-business.xml
+END
+generalQuo-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/quotation/generalQuo/generalQuo-web-spring.xml
+END

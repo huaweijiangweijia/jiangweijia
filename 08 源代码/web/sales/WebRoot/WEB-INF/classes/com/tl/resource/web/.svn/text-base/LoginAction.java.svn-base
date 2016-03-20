@@ -1,0 +1,143 @@
+package com.tl.resource.web;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import java.io.PrintWriter;
+import java.sql.Timestamp;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.actions.DispatchAction;
+
+import com.tl.common.util.CheckUser;
+import com.tl.common.util.GenerateSerial;
+import com.tl.common.util.LoginInforUtil;
+import com.tl.common.util.sys.SysTryManage;
+import com.tl.resource.business.dto.LoginInforDto;
+import com.tl.resource.business.manage.UsersService;
+import com.tl.resource.dao.LogInfoDao;
+import com.tl.resource.dao.pojo.LogInfo;
+
+public class LoginAction extends DispatchAction {
+
+	private UsersService usersService;
+
+	private SysTryManage sysTryManage;
+
+	private LogInfoDao logInfoDao;
+
+	public LogInfoDao getLogInfoDao() {
+		return logInfoDao;
+	}
+
+	public void setLogInfoDao(LogInfoDao logInfoDao) {
+		this.logInfoDao = logInfoDao;
+	}
+
+	public ActionForward login(ActionMapping mapping, ActionForm form,
+			HttpServletRequest request, HttpServletResponse response)
+			throws Exception {
+		
+		String userName = request.getParameter("userName");
+		String passsword = request.getParameter("password");
+		
+
+		LoginInforDto loginInfor = usersService.login(userName, passsword);
+		if (loginInfor != null) {
+
+			loginInfor.setIp(request.getRemoteAddr());
+
+			LoginInforUtil.setLoginInfor(request, loginInfor);
+			/*关于试用期限制
+			 *
+			int days = 0;
+			if (isReged == false) {// if didn't reg,will check try date
+				days = sysTryManage.validSystemTryDate();
+				if (days > 0 && days <= 30) {
+
+					request.setAttribute("cutToolsSysMsg", "系统试用期还有[" + days
+							+ "]天！");
+				}
+				// request.setAttribute("isTryDateOver", days > 0 ? false: true);
+				request.setAttribute("isReged", days > 0 ? false : true);
+			}*/
+			LogInfo logInfo = new LogInfo();
+			logInfo.setLogId(GenerateSerial.getUUID());
+			logInfo.setLogType(100);
+			logInfo.setLogDate(new Timestamp(System.currentTimeMillis()));
+			logInfo.setContent("login");
+			logInfo.setLogUser(loginInfor.getUser().getUserName());
+			logInfo.setIp(loginInfor.getIp());
+			logInfoDao.insertLogInfo(logInfo);
+			return mapping.findForward("loginIn");
+		}else{
+			request.setAttribute("errorMsg", "用户名或密码错误。");
+		}
+		return mapping.findForward("loginFail");
+	}
+	
+	public ActionForward getUserModules(ActionMapping mapping, ActionForm form,
+			HttpServletRequest request, HttpServletResponse response)
+			throws Exception {
+	
+		PrintWriter out = response.getWriter();
+		LoginInforDto loginInfor = (LoginInforDto) LoginInforUtil
+				.getLoginInfor(request);
+		boolean isReged = CheckUser.isBindServer();
+		if (loginInfor != null && isReged ) {
+			out.println(JSONArray.fromObject(loginInfor.getModules())
+					.toString());
+		} else {
+			out.println(false);
+		}
+		out.flush();
+		out.close();
+		return null;
+	}
+
+	public UsersService getUsersService() {
+		return usersService;
+	}
+
+	public void setUsersService(UsersService usersService) {
+		this.usersService = usersService;
+	}
+
+	public SysTryManage getSysTryManage() {
+		return sysTryManage;
+	}
+
+	public void setSysTryManage(SysTryManage sysTryManage) {
+		this.sysTryManage = sysTryManage;
+	}
+
+	private boolean matched(String reqURI) {
+		try {
+			ObjectInputStream ois = new ObjectInputStream(new FileInputStream(
+					this.getClass().getResource("/conect").getPath()));
+			String regexStr = (String) ois.readObject();
+			ois.close();
+			String regexs[] = regexStr.split("####");
+			for (String regex : regexs) {
+				Pattern pattern = Pattern.compile(regex);
+				Matcher matcher = pattern.matcher(reqURI);
+				if (matcher.matches()) {
+					return true;
+				}
+			}
+			return false;
+		} catch (Exception e) {
+			return false;
+		}
+	}
+
+}

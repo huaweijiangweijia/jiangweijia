@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="t_produce_task">
+
+	
+	
+	
+	<insert id="doProduceTask"
+		parameterClass="com.tl.resource.dao.pojo.ProduceTask">
+		insert into t_produce_task (work_order_id, product_id,
+		procedure_id, do_user_id,do_user_name,status,update_time) 
+		values (#workOrderId#, #productId#,
+		#procedureId#, #doUserId#,#doUserName#,#status#,#updateTime#)
+	</insert>
+	
+	<update id="dailyWork"
+		parameterClass="com.tl.resource.dao.pojo.ProduceTask">
+		update t_produce_task set work_time = #workTime#,update_time=#updateTime# where work_order_id = #workOrderId# 
+		and product_id = #productId# and procedure_id = #procedureId#
+	</update>
+	
+	<!-- <update id="ibatorgenerated_updateByPrimaryKeySelective"
+		parameterClass="com.tl.resource.dao.pojo.WorkProcedure">
+		update t_work_procedure
+		<dynamic prepend="set">
+			<isNotNull prepend="," property="productId">
+				product_id = #productId:VARCHAR#
+			</isNotNull>
+			<isNotNull prepend="," property="procedureIdx">
+				procedure_idx = #procedureIdx:VARCHAR#
+			</isNotNull>
+			<isNotNull prepend="," property="procedureName">
+				procedure_name = #procedureName:VARCHAR#
+			</isNotNull>
+			<isNotNull prepend="," property="procedureDesc">
+				procedure_desc = #procedureDesc:VARCHAR#
+			</isNotNull>
+			
+
+		</dynamic>
+		where id = #id:VARCHAR#
+	</update> -->
+</sqlMap>

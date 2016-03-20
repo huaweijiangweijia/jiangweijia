@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="t_product_work_order">
+
+	<resultMap class="com.tl.resource.dao.pojo.TProductWorkOrder"
+		id="product_work_order_map">
+		<result column="id" jdbcType="int" property="id" />
+		<result column="plan_id" jdbcType="VARCHAR" property="planId" />
+		<result column="count" jdbcType="int" property="count" />
+		<result column="category" jdbcType="VARCHAR" property="category" />
+		<result column="status" jdbcType="VARCHAR" property="status" />
+		<result column="parent_work_order_id" jdbcType="VARCHAR" property="parentWorkOrderId" />
+		<result column="product_id" jdbcType="VARCHAR" property="productId" />
+	</resultMap> 
+
+
+	<select id="getProductWorkOrderList" parameterClass="java.util.Map"
+		resultMap="product_work_order_map">
+	      select a.id,a.plan_id,a.count,a.category,a.status,a.parent_work_order_id,b.product_id from t_product_work_order a left join t_produce_plan b on a.plan_id = b.plan_id
+	      limit #start#,#limit#
+	</select>
+	<select id="getProductWorkOrderCount" parameterClass="java.util.Map"
+		resultClass="int">
+		select count(*) from t_product_work_order
+	</select>
+
+
+	<insert id="insertProductWorkOrder" parameterClass="com.tl.resource.dao.pojo.TProductWorkOrder">
+		insert into
+		t_product_work_order (id, plan_id, count,
+		category,
+		status,parent_work_order_id) values (#id:INT#, #planId:VARCHAR#,
+		#count:VARCHAR#, #category:VARCHAR#, #status:VARCHAR#,
+		#parentWorkOrderId:VARCHAR#)
+	</insert>
+
+	<delete id="deleteProductWorkOrder" parameterClass="String">
+		delete from t_product_work_order where id = #id:VARCHAR#
+	</delete>
+
+
+	<update id="updateProductWorkOrder" parameterClass="com.tl.resource.dao.pojo.TProductWorkOrder"> 
+		update t_product_work_order <dynamic prepend="set"> 
+		<isNotNull prepend="," property="plan_id"> plan_id = #planId:VARCHAR# </isNotNull> 
+		<isNotNull prepend="," property="count"> count = #count:VARCHAR# </isNotNull> 
+		<isNotNull prepend="," property="category"> category = #category:VARCHAR#</isNotNull> 
+		<isNotNull prepend="," property="status"> status = #status:VARCHAR#</isNotNull>
+		<isNotNull prepend="," property="parent_work_order_id"> parent_work_order_id = #parentWorkOrderId:VARCHAR#</isNotNull>
+		</dynamic> where id = #id:VARCHAR# </update>
+</sqlMap>

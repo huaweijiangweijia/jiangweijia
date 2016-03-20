@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/dto
+END
+LinkBusinessObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/dto/LinkBusinessObject.java
+END
+TAuditBatchRecordDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/dto/TAuditBatchRecordDto.java
+END
+PageHeaderInfor.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/dto/PageHeaderInfor.java
+END
+TAuditHistoryDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/dto/TAuditHistoryDto.java
+END
+TAuditTypeDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/dto/TAuditTypeDto.java
+END
+AuditTypeFlowInforDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/dto/AuditTypeFlowInforDto.java
+END
+TAuditInstanceDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/dto/TAuditInstanceDto.java
+END
+TAuditFlowInforDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/dto/TAuditFlowInforDto.java
+END
+TAuditContentDefDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/dto/TAuditContentDefDto.java
+END
+TAuditFlowDetailDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/audit/dto/TAuditFlowDetailDto.java
+END

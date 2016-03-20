@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/sales/!svn/ver/19/jiyun/WebRoot/js/arrival
+END
+arrival_index.js
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/sales/!svn/ver/19/jiyun/WebRoot/js/arrival/arrival_index.js
+END
+arrival_manage.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/sales/!svn/ver/19/jiyun/WebRoot/js/arrival/arrival_manage.js
+END
+order_search.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sales/!svn/ver/19/jiyun/WebRoot/js/arrival/order_search.js
+END
+order_arrival_index.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sales/!svn/ver/19/jiyun/WebRoot/js/arrival/order_arrival_index.js
+END
+reserve_arrival_index.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sales/!svn/ver/19/jiyun/WebRoot/js/arrival/reserve_arrival_index.js
+END
+testcut_arrival_index.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sales/!svn/ver/19/jiyun/WebRoot/js/arrival/testcut_arrival_index.js
+END
+store_arrival_index.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sales/!svn/ver/19/jiyun/WebRoot/js/arrival/store_arrival_index.js
+END

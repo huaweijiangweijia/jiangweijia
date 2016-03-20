@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sales/!svn/ver/315/jiyun/src/com/tl/resource/dao/constant
+END
+TQuotationInforConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/315/jiyun/src/com/tl/resource/dao/constant/TQuotationInforConstant.java
+END
+TCustomersInforConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/199/jiyun/src/com/tl/resource/dao/constant/TCustomersInforConstant.java
+END
+TOrderInforConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/225/jiyun/src/com/tl/resource/dao/constant/TOrderInforConstant.java
+END
+TResourcePurviewConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sales/!svn/ver/199/jiyun/src/com/tl/resource/dao/constant/TResourcePurviewConstant.java
+END
+TUserInforConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/199/jiyun/src/com/tl/resource/dao/constant/TUserInforConstant.java
+END
+TProductToolsInforConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sales/!svn/ver/199/jiyun/src/com/tl/resource/dao/constant/TProductToolsInforConstant.java
+END

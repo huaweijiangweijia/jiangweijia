@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/sales/!svn/ver/248/jiyun/config/spring/conf/planOrder
+END
+planOrder-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/planOrder/planOrder-web-spring.xml
+END
+planOrder-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/248/jiyun/config/spring/conf/planOrder/planOrder-dao.xml
+END
+planOrder-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/planOrder/planOrder-business.xml
+END

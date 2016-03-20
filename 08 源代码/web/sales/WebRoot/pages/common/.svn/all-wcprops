@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/sales/!svn/ver/19/jiyun/WebRoot/pages/common
+END
+error400.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sales/!svn/ver/19/jiyun/WebRoot/pages/common/error400.jsp
+END
+error500.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sales/!svn/ver/19/jiyun/WebRoot/pages/common/error500.jsp
+END
+exception.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/sales/!svn/ver/19/jiyun/WebRoot/pages/common/exception.jsp
+END
+error403.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sales/!svn/ver/19/jiyun/WebRoot/pages/common/error403.jsp
+END
+error404.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sales/!svn/ver/19/jiyun/WebRoot/pages/common/error404.jsp
+END

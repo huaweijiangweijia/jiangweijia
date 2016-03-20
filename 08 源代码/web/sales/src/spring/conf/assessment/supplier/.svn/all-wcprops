@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/assessment/supplier
+END
+supplier-asm-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/assessment/supplier/supplier-asm-dao.xml
+END
+supplier-asm-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/assessment/supplier/supplier-asm-business.xml
+END
+supplier-asm-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/assessment/supplier/supplier-asm-web-spring.xml
+END

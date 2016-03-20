@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/317/jiyun/src/com/tl/resource/business/quotation/generalquo
+END
+ExcelService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/quotation/generalquo/ExcelService.java
+END
+GeneralQuoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sales/!svn/ver/315/jiyun/src/com/tl/resource/business/quotation/generalquo/GeneralQuoService.java
+END
+QuoListToExcel.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/quotation/generalquo/QuoListToExcel.java
+END
+GeneralQuoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sales/!svn/ver/317/jiyun/src/com/tl/resource/business/quotation/generalquo/GeneralQuoServiceImpl.java
+END
+GeneralQuoToExcel.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/quotation/generalquo/GeneralQuoToExcel.java
+END
+ReserveListExportExcel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/quotation/generalquo/ReserveListExportExcel.java
+END
+TestCutListExportExcel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/quotation/generalquo/TestCutListExportExcel.java
+END
+QuoExportExcelAbstract.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/quotation/generalquo/QuoExportExcelAbstract.java
+END

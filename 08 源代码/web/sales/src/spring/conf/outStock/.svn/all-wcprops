@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sales/!svn/ver/248/jiyun/config/spring/conf/outStock
+END
+outStock-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/248/jiyun/config/spring/conf/outStock/outStock-business.xml
+END
+outStock-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/outStock/outStock-web-spring.xml
+END
+outStock-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/248/jiyun/config/spring/conf/outStock/outStock-dao.xml
+END

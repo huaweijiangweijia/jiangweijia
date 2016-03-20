@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="t_production_plan_infor" >
+
+  <resultMap id="ibatorgenerated_BaseResultMap" class="com.tl.resource.dao.pojo.TProductionPlanInfor" >
+    <result column="plan_id" property="planId" jdbcType="INTEGER" />
+    <result column="product_id" property="productId" jdbcType="VARCHAR" />
+    <result column="count" property="count" jdbcType="INTEGER" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="category" property="category" jdbcType="VARCHAR" />
+    <result column="bacth_no" property="bacthNo" jdbcType="VARCHAR" />
+    <result column="total_count" property="totalCount" jdbcType="INTEGER" />
+  </resultMap>
+  
+    <insert id="ibatorgenerated_insert" parameterClass="com.tl.resource.dao.pojo.TProductionPlanInfor" >
+    insert into t_produce_plan (product_id, count, status, category, bacth_no)
+    values (#productId:VARCHAR#, #count:INTEGER#, #status:CHAR#, #category:CHAR#,
+      #bacthNo:VARCHAR#)
+  </insert>
+  
+    <select id="ibatorgenerated_selectByExample" resultMap="ibatorgenerated_BaseResultMap" parameterClass="com.tl.resource.dao.pojo.TProductionPlanInfor" >
+    select (select count(*) from t_produce_plan) total_count, plan_id, product_id, count, status, category, bacth_no      from t_produce_plan t where 1=1  
+    <isParameterPresent >
+      <isNotEmpty prepend="and" property="planId" >
+	        t.plan_id=#planId#
+	   </isNotEmpty>
+	   <isNotEmpty prepend="and" property="productId" >
+	        t.product_id=#productId#
+	   </isNotEmpty>
+	   <isNotEmpty prepend="and" property="bacthNo" >
+	        t.bacth_no=#bacthNo#
+	   </isNotEmpty>
+       <isNotEmpty prepend="and" property="status" >
+	        t.status=#status#
+	   </isNotEmpty>
+	    <isNotEmpty property="startIndex" >
+	        limit $startIndex$,$pageSize$
+	   </isNotEmpty>
+    </isParameterPresent>
+  </select>
+  
+  <update id="ibatorgenerated_updateByPrimaryKeySelective" parameterClass="com.tl.resource.dao.pojo.TProductionPlanInfor" >
+    update t_produce_plan
+    <dynamic prepend="set" >
+      <isNotNull prepend="," property="productId" >
+        product_id = #productId:VARCHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="count" >
+        count = #count:INTEGER#
+      </isNotNull>
+      <isNotNull prepend="," property="status" >
+        status = #status:CHAR#
+      </isNotNull>
+      <isNotNull prepend="," property="category" >
+        category = #category:CHAR#
+      </isNotNull>
+    </dynamic>
+    where plan_id = #planId:INTEGER#
+  </update>
+  
+  <delete id="ibatorgenerated_deleteByExample" parameterClass="com.tl.resource.dao.pojo.TProductionPlanInfor" >
+    delete from t_produce_plan where plan_id = #planId:INTEGER# 
+  </delete>
+  
+</sqlMap>

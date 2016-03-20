@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<bean id="ContractOrderServiceImpl" parent="parentService">
+		<property name="target">
+			<bean class="com.tl.resource.business.contractOrder.ContractOrderServiceImpl">
+				<property name="orderInforDao">
+					<ref bean="TOrderInforDAOImpl" />
+				</property>
+				<property name="orderDetailDao">
+					<ref bean="TOrderDetailDAOImpl" />
+				</property>
+				<property name="contractInforDao">
+					<ref bean="TContractInforDAOImpl" />
+				</property>
+				<property name="suppliersInforDao">
+					<ref bean="TSuppliersInforDAOImpl" />
+				</property>
+				<property name="contractProductDetailDao">
+					<ref bean="contractProductDetailDAO" />
+				</property>
+				<property name="contractProjectSortInforDao">
+					<ref bean="TContractProjectSortInforDAOImpl" />
+				</property>
+				<property name="orderPriceHistoryDao">
+					<ref bean="torderPriceHistoryDAO"/>
+				</property>
+				<property name="accessoriesDAO">
+					<ref bean="TAccessoriesDAO"/>
+				</property>
+				<property name="tsalesPriceHistoryDAO">
+					<ref bean="tsalesPriceHistoryDAO"/>
+				</property>
+				<property name="companyInforDAO">
+					<ref bean="TCompanyInforDAO"/>
+				</property>
+				<property name="exchangeRateDAO">
+					<ref bean="TExchangeRateDAO"/>
+				</property>
+				<property name="resourcePurviewDAO" ref="TResourcePurviewDAOImpl"/>
+				<property name="baseInfoService" ref="baseInfoService"/>
+			</bean>
+		  </property>
+	</bean>
+	
+	
+	<bean id="OrderExcelServiceImpl" parent="parentService">
+		<property name="target">
+			<bean class="com.tl.resource.business.contractOrder.OrderExcelImp">
+				<property name="orderInforDao">
+					<ref bean="TOrderInforDAOImpl" />
+				</property>
+				<property name="orderDetailDao">
+					<ref bean="TOrderDetailDAOImpl" />
+				</property>
+				<property name="suppliersInforDao">
+					<ref bean="TSuppliersInforDAOImpl" />
+				</property>
+				<property name="accessoriesDAO">
+					<ref bean="TAccessoriesDAO"/>
+				</property>
+				<property name="companyInforDAO">
+					<ref bean="TCompanyInforDAO" />
+				</property>
+				<property name="exchangeRateDAO">
+					<ref bean="TExchangeRateDAO"/>
+			    </property>
+			</bean>
+		  </property>
+	</bean>
+	
+	
+</beans>

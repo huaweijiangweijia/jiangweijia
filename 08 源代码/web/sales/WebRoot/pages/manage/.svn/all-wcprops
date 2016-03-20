@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/sales/!svn/ver/668/jiyun/WebRoot/pages/manage
+END
+menus.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sales/!svn/ver/666/jiyun/WebRoot/pages/manage/menus.jsp
+END
+modules.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sales/!svn/ver/19/jiyun/WebRoot/pages/manage/modules.jsp
+END
+inBillWindow_new.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sales/!svn/ver/19/jiyun/WebRoot/pages/manage/inBillWindow_new.js
+END
+inBillByNoPlan.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sales/!svn/ver/19/jiyun/WebRoot/pages/manage/inBillByNoPlan.js
+END
+inBillDetailPanel.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sales/!svn/ver/19/jiyun/WebRoot/pages/manage/inBillDetailPanel.js
+END
+billDocument.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sales/!svn/ver/19/jiyun/WebRoot/pages/manage/billDocument.jsp
+END
+inBillByContract.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sales/!svn/ver/19/jiyun/WebRoot/pages/manage/inBillByContract.js
+END

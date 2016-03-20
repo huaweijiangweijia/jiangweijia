@@ -1,0 +1,142 @@
+8
+
+dir
+804
+http://125.76.249.115:8080/svn/sales/jiyun/src/com/tl/resource/business
+http://125.76.249.115:8080/svn/sales
+
+
+
+2015-04-02T00:03:11.795659Z
+657
+lcc
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+081e45d7-d262-1141-abe1-e9a051cbb99e
+
+LogInfoServiceImpl.java
+file
+
+
+
+
+2015-08-26T03:44:30.328125Z
+212eefd41c2d420f5fd1df4df3789be1
+2014-09-15T01:48:28.148742Z
+19
+lv
+
+delivery
+dir
+
+quotation
+dir
+
+upload
+dir
+
+trySelfOrder
+dir
+
+selfOrder
+dir
+
+assessment
+dir
+
+reservePlan
+dir
+
+baseInfo
+dir
+
+dto
+dir
+
+planOrder
+dir
+
+manage
+dir
+
+scheduleOrder
+dir
+
+WaitWorksInforService.java
+file
+
+
+
+
+2015-08-26T03:44:30.312500Z
+0398f592671904f92b104f63dbaaf37c
+2014-09-15T01:48:28.148742Z
+19
+lv
+
+notepad
+dir
+
+invoice
+dir
+
+protoolsinfo
+dir
+
+LogInfoService.java
+file
+
+
+
+
+2015-08-26T03:44:30.312500Z
+72d30e47df5c89b4f714d2407b4cce12
+2014-09-15T01:48:28.148742Z
+19
+lv
+
+WaitWorksInforServiceImp.java
+file
+
+
+
+
+2015-08-26T03:44:30.328125Z
+edc8fd037e19d7c25f424fedf14e4d7f
+2014-09-15T01:48:28.148742Z
+19
+lv
+
+arrival
+dir
+
+scheduleSelfOrder
+dir
+
+reserveOrder
+dir
+
+contractOrder
+dir
+
+tryOrder
+dir
+
+outStock
+dir
+
+contract
+dir
+

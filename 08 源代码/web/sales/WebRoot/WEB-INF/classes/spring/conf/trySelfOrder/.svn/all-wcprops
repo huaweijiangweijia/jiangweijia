@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/trySelfOrder
+END
+trySelfOrder-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/trySelfOrder/trySelfOrder-dao.xml
+END
+trySelfOrder-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/trySelfOrder/trySelfOrder-business.xml
+END
+trySelfOrder-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/trySelfOrder/trySelfOrder-web-spring.xml
+END

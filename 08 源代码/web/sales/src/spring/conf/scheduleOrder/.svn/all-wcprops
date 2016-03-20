@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sales/!svn/ver/248/jiyun/config/spring/conf/scheduleOrder
+END
+scheduleOrder-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/scheduleOrder/scheduleOrder-business.xml
+END
+scheduleOrder-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/scheduleOrder/scheduleOrder-web-spring.xml
+END

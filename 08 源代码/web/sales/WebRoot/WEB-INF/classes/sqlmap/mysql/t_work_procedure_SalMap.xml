@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="t_work_procedure">
+	<resultMap class="com.tl.resource.dao.pojo.WorkProcedure"
+		id="work_procedure_map">
+		
+		
+		<result column="id" jdbcType="int" property="id" />
+		<result column="product_id" jdbcType="VARCHAR"
+			property="productId" />
+		<result column="procedure_idx" jdbcType="VARCHAR"
+			property="procedureIdx" />
+		<result column="procedure_name" jdbcType="VARCHAR"
+			property="procedureName" />
+		<result column="procedure_desc" jdbcType="VARCHAR" property="procedureDesc" />
+	</resultMap>
+
+	
+	<select id="getWorkProcedureList" parameterClass="String"
+		resultMap="work_procedure_map">
+	      select * from t_work_procedure where product_id = #productId# order by procedure_idx asc;
+	</select>
+	
+	
+	<insert id="ibatorgenerated_insert"
+		parameterClass="com.tl.resource.dao.pojo.WorkProcedure">
+		insert into t_work_procedure (product_id, procedure_idx,
+		procedure_name, procedure_desc) values (#productId:VARCHAR#, #procedureIdx:VARCHAR#,
+		#procedureName:VARCHAR#, #procedureDesc:VARCHAR#)
+	</insert>
+	
+	<delete id="ibatorgenerated_deleteByPrimaryKey"
+		parameterClass="int">
+		delete from t_work_procedure where id = #id#
+	</delete>
+	
+	
+	<update id="ibatorgenerated_updateByPrimaryKeySelective"
+		parameterClass="com.tl.resource.dao.pojo.WorkProcedure">
+		update t_work_procedure
+		<dynamic prepend="set">
+			<isNotNull prepend="," property="productId">
+				product_id = #productId:VARCHAR#
+			</isNotNull>
+			<isNotNull prepend="," property="procedureIdx">
+				procedure_idx = #procedureIdx:VARCHAR#
+			</isNotNull>
+			<isNotNull prepend="," property="procedureName">
+				procedure_name = #procedureName:VARCHAR#
+			</isNotNull>
+			<isNotNull prepend="," property="procedureDesc">
+				procedure_desc = #procedureDesc:VARCHAR#
+			</isNotNull>
+			
+
+		</dynamic>
+		where id = #id:VARCHAR#
+	</update>
+</sqlMap>

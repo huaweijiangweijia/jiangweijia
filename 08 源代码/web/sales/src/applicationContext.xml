@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${driver}"></property>
+		<property name="url" value="${url}"></property>
+		<property name="username" value="${username}"></property>
+		<property name="password" value="${password}"></property>
+	</bean>
+
+	<!-- mysql config start-->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:MysqlConfig.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<!--定义定时任务类--> 
+	<bean id="someData" class="com.tl.common.util.backup.JobData"/> 
+	
+	<bean id="jobDetailBean" class="org.springframework.scheduling.quartz.JobDetailBean"> 
+	    <property name="jobClass"> 
+	     <value>com.tl.common.util.backup.BackupDatabaseJob</value> 
+	    </property> 
+	    <property name="jobDataAsMap"> 
+	     <map> 
+	        <entry key="jobData"> 
+	         <ref bean="someData"/> 
+	        </entry> 
+	     </map> 
+	    </property> 
+	</bean> 
+	<bean id="cronTriggerBean" class="org.springframework.scheduling.quartz.CronTriggerBean">
+	    <!--这里定义定时任务的对象的位置--> 
+	    <property name="jobDetail"> 
+	     <ref bean="jobDetailBean"/> 
+	    </property> 
+	    <!--这里定义每天11点07分的时候程序执行一次--> 
+	    <property name="cronExpression"> 
+	     <value>0 43 17 * * ?</value> 
+	    </property> 
+	</bean> 
+	<bean id="jobDetailBean2" class="org.springframework.scheduling.quartz.JobDetailBean"> 
+	    <property name="jobClass"> 
+	     <value>com.tl.common.util.backup.ResetSerialNumberJob</value> 
+	    </property> 
+	    <property name="jobDataAsMap"> 
+	     <map> 
+	        <entry key="jobData"> 
+	         <ref bean="someData"/> 
+	        </entry> 
+	        <entry key="systemRunDao"> 
+	         <ref bean="systemRunDao"/> 
+	        </entry> 
+	        <entry key="billsCodeDefDAO"> 
+	         <ref bean="TBillsCodeDefDAOImpl"/> 
+	        </entry> 
+	     </map> 
+	    </property> 
+	</bean> 
+	<bean id="cronTriggerBean2" class="org.springframework.scheduling.quartz.CronTriggerBean">
+	    <!--这里定义定时任务的对象的位置--> 
+	    <property name="jobDetail"> 
+	     <ref bean="jobDetailBean2"/> 
+	    </property> 
+	    <property name="cronExpression"> 
+	     <value>0 0 0/1 * * ?</value> 
+	    </property> 
+	</bean> 
+	
+	
+	<bean id="schedulerFactoryBean" class="org.springframework.scheduling.quartz.SchedulerFactoryBean"> 
+	    <property name="triggers"> 
+	     <list> 
+	        <ref bean="cronTriggerBean"/> 
+	        <ref bean="cronTriggerBean2"/> 
+	     </list> 
+	    </property> 
+	</bean> 
+
+	<bean id="sqlMapClient"
+		class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="configLocation"
+			value="classpath:sqlmap/SqlMap4Mysql.xml">
+		</property>
+		<property name="dataSource" ref="dataSource"></property>
+	</bean> 
+
+	<!-- mysql config end -->
+
+	<!-- ORACLE config start -->
+	<!--
+		<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location"
+		value="classpath:OracleConfig.properties" />
+		</bean>
+		<bean id="sqlMapClient"
+		class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="configLocation"
+		value="classpath:sqlmap/SqlMap4Oracle.xml">
+		</property>
+		<property name="dataSource" ref="dataSource"></property>
+		</bean>
+-->
+	<!-- ORACLE config end -->
+
+	<bean id="txManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="parentService"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"
+		abstract="true">
+		<property name="transactionManager" ref="txManager" />
+		<property name="transactionAttributes">
+			<props>
+				<prop key="save*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="add*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="insert*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="modify*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="update*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="del*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="remove*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="create*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="commit*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="*">PROPAGATION_SUPPORTS,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+	<bean name="SysTryManage" class="com.tl.common.util.sys.SysTryManage" >
+		<property name="logInfoDao">
+			<ref bean="logInfoDao" />
+		</property>
+	</bean>
+	<bean name="/loginAction" class="com.tl.resource.web.LoginAction">
+		<property name="usersService">
+			<ref bean="UsersServiceImp" />
+		</property>
+		<property name="sysTryManage">
+			<ref bean="SysTryManage" />
+		</property>
+		<property name="logInfoDao">
+			<ref bean="logInfoDao" />
+		</property>
+	</bean>
+	<bean name="/WaitWorksInforAction" class="com.tl.resource.web.WaitWorksInforAction">
+		<property name="waitWorksInforService">
+			<ref bean="WaitWorksInforService" />
+		</property>
+		
+	</bean>
+	<bean name="orderExcel" class="com.tl.common.OrderExcel.orderExcel">
+		<property name="accessoriesDAO">
+			<ref bean="TAccessoriesDAO" />
+		</property>
+	</bean>
+	<bean id="WaitWorksInforService"
+		class="com.tl.resource.business.WaitWorksInforServiceImp">
+		<property name="auditDao">
+			<ref bean="AuditDao" />
+		</property>
+		<property name="quoInfoDAO">
+			<ref bean="TQuotationInfoDAO" />
+		</property>
+		<property name="contractInforDAO">
+			<ref bean="contractInforDAO" />
+		</property>
+		<property name="resourcePurviewDAO">
+			<ref bean="TResourcePurviewDAOImpl" />
+		</property>
+		<property name="modulesDefDAO">
+			<ref bean="TModulesDefDAO" />
+		</property>
+	</bean>
+	<bean name="/printViewAction" class="com.tl.resource.web.contractOrder.PrintViewAction">
+		<property name="contractOrderService">
+			<ref bean="ContractOrderServiceImpl" />
+		</property>
+	</bean>
+
+	<bean name="/InputCheckCodeAction" class="com.tl.resource.web.InputCheckCodeAction">
+	</bean>
+	<bean name="/SystemUpdateAction" class="com.tl.resource.web.SystemUpdateAction">
+	</bean>
+	<bean name="/LogoutAction" class="com.tl.resource.web.LogoutAction">
+	</bean>
+	<bean name="/indexAction" class="com.tl.resource.web.IndexAction" /> 
+	<bean name="/DataBackupImpAction" class="com.tl.resource.web.DataBackupImpAction" />
+	
+</beans>

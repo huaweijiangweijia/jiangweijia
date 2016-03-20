@@ -1,0 +1,540 @@
+Ext.onReady(function(){
+Ext.ffc.QuickTips = {
+	win : null,
+	show : function(x,y,msg){
+		if(Ext.ffc.QuickTips.win != null) Ext.ffc.QuickTips.win.close();
+		Ext.ffc.QuickTips.win=new Ext.Window({
+			width:290,
+			height:170,
+			closeAction:'close',
+			constrain:false,
+			html : msg,
+			pageX : x - 400,
+			pageY : y * 1 + 23,
+			resizable :false
+		});
+	
+		Ext.ffc.QuickTips.win.show(); 
+	},
+	close: function(){
+	    if(Ext.ffc.QuickTips.win != null) Ext.ffc.QuickTips.win.close();
+	}
+}
+Ext.ffc.QuickTips2 = {
+		win : null,
+		show : function(x,y,msg){
+			if(Ext.ffc.QuickTips2.win != null) Ext.ffc.QuickTips2.win.close();
+			Ext.ffc.QuickTips2.win=new Ext.Window({
+				width:290,
+				height:170,
+				closeAction:'close',
+				constrain:false,
+				html : msg,
+				pageX : x-109,
+				pageY : y * 1 + 23,
+				resizable :false
+			});
+			Ext.ffc.QuickTips2.win.show(); 
+		},
+		close: function(){
+		    if(Ext.ffc.QuickTips2.win != null) Ext.ffc.QuickTips2.win.close();
+		}
+	}
+
+
+Ext.ffc.NoticeMsg = {
+	waitOfficeButtton : null,
+	waitWorks : null,
+	requestWaitWorks : function(m){
+			//暂时停止该功能，影响性能，2015/2/2
+			return;
+			var method = "requestInfos";
+			if (m!="undefined" &&  typeof(m) != "undefined") { 
+				method = m;
+			}  
+			Ext.Ajax.request({
+				url: PATH + '/WaitWorksInforAction.do',
+				params: {ffc:method},
+				success: function(response){
+					eval("var temp = " + response.responseText);
+					Ext.ffc.NoticeMsg.waitWorks = temp;
+					var rt = [];
+					var flashFlag = false;
+					var flashFlag2 = false;
+					var preStr = "<div style='font-size:9pt;'>现有 [";
+					if(temp.waitorderConCount > 0){
+						flashFlag = true;
+						rt.push(preStr , temp.waitorderConCount , "] 份合同，需要编制合同订单!</div>");
+					}
+					if(temp.waitContractQuoCount > 0){
+						flashFlag = true;
+						rt.push(preStr , temp.waitContractQuoCount , "] 份报价单，需要编制合同!</div>");
+					}
+					if(temp.waitSelfOrderConCount > 0){
+						flashFlag = true;
+						rt.push(preStr , temp.waitSelfOrderConCount , "] 份合同，需要加工订单!</div>");
+					}
+					if(temp.waitExpectedQuoCount > 0){
+						//flashFlag = true;
+						rt.push(preStr , temp.waitExpectedQuoCount , "] 份预定报价单，需要编制预定订单!</div>");
+					}
+					if(temp.waitExpectedQuo4SelfOrderCount > 0){
+						//flashFlag = true;
+						rt.push(preStr , temp.waitExpectedQuo4SelfOrderCount , "] 份预定报价单，需要编制预定加工订单!</div>");
+					}
+					if(temp.waitTryToolsQuoCount > 0){
+						//flashFlag = true;
+						rt.push(preStr , temp.waitTryToolsQuoCount , "] 份试刀申请，需要编制试刀订单!</div>");
+					}
+					if(temp.waitTryToolsQuo4SelfOrderCount > 0){
+						//flashFlag = true;
+						rt.push(preStr , temp.waitTryToolsQuo4SelfOrderCount , "] 份试刀申请，需要编制试刀加工订单!</div>");
+					}
+					if(temp.contractCountCouldUploadFile > 0){
+						//flashFlag = true;
+						rt.push(preStr , temp.contractCountCouldUploadFile , "] 份合同，需要上传附件!</div>");
+					}
+					if(temp.expectedQuo2QuoCount > 0){
+						//flashFlag = true;
+						rt.push(preStr , temp.expectedQuo2QuoCount , "] 份预定报价单，需要转正式报价单!</div>");
+					}
+					if(temp.tryTools2DeliveryCount > 0){
+						//flashFlag = true;
+						rt.push(preStr , temp.tryTools2DeliveryCount , "] 份试刀申请，需要交货!</div>");
+					}
+					if(temp.tryTools2UploadReportCount > 0){
+						//flashFlag = true;
+						rt.push(preStr , temp.tryTools2UploadReportCount , "] 份试刀申请，需要上传试刀报告!</div>");
+					}
+					if(method == 'unPayment' && temp.unPaymentContracts.length > 0){ // 回款信息
+						flashFlag2 = true;
+						var codeArr = temp.unPaymentContracts.split(",");
+						rt.push(preStr , codeArr.length , "] 份合同，已超过付款期限!</div>");
+						for(var i=0;i<codeArr.length;i++){
+							rt.push("<div style='font-size:9pt;'>",codeArr[i],"</div>");
+						}
+						
+					}
+					Ext.ffc.regCodeEditWindow.cupCode = temp.cupCode;
+				    if(temp.willReg > 0 && os_isTryDateOver){
+					    var btn = tb.findById('regCodeInput');
+					    var w = new Ext.ffc.regCodeEditWindow({
+							cupCode : Ext.ffc.regCodeEditWindow.cupCode,
+							regBtn : btn
+						});
+						w.show();
+					}
+
+					if(temp.waitAuditCount > 0){
+						flashFlag = true;
+						rt.push(preStr , temp.waitAuditCount , "] 份单据，需要审批!</div>");
+					}else{
+						with(Ext.ffc.auditWorkButton.btnEl.dom.style){
+							backgroundImage = '';
+						}
+					}
+					if(flashFlag){
+						with(Ext.ffc.auditWorkButton.btnEl.dom.style){
+							backgroundImage = 'url(' + PATH + '/images/4.gif)';
+							backgroundPosition = 'left top';
+							backgroundRepeat = 'no-repeat';
+							var t = Ext.ffc.auditWorkButton.btnEl.dom.offsetWidth;
+						    width =  '65px';
+							textAlign =  'right';
+						}
+					}
+					if(flashFlag2){
+						with(Ext.ffc.unPaymentButton.btnEl.dom.style){
+							backgroundImage = 'url(' + PATH + '/images/4.gif)';
+							backgroundPosition = 'left top';
+							backgroundRepeat = 'no-repeat';
+							var t = Ext.ffc.unPaymentButton.btnEl.dom.offsetWidth;
+							if(t < 80){
+							    width =  t + 14 + 'px';
+							}
+							textAlign =  'right';
+						}
+					}
+					var xy = Ext.ffc.NoticeMsg.waitOfficeButtton.getPosition();
+					if(rt.length > 0){
+						if(method == 'unPayment')
+							Ext.ffc.QuickTips2.show(xy[0],xy[1],rt.join(""));
+						else
+							Ext.ffc.QuickTips.show(xy[0],xy[1],rt.join(""));
+					}
+				}
+			});
+	}
+}
+
+
+Ext.ffc.sendMsg2Server = function(method){
+
+	NoticeMessageUtil.sendMessage("Ext.ffc.NoticeMsg.requestWaitWorks('"+method+"')",PATH + "/indexAction.do",function(){});
+}
+
+
+Ext.ffc.UserInforEditWindow = Ext.extend(Ext.Window, {  
+		constrainHeader : true,
+		width : 253,
+		height : 243,
+		modal : true,
+		title :  '修改密码',
+		layout: 'fit',
+		resizable :false
+});
+Ext.ffc.regCodeEditWindow = Ext.extend(Ext.Window, {  
+		constrainHeader : true,
+		width : 353,
+		height : 180,
+		modal : true,
+		title :  '请输入系统注册码',
+		layout: 'fit',
+		resizable :false,
+		constructor : function(_cfg) {
+			if(_cfg == null) {
+				_cfg = {};
+			}
+			Ext.apply(this, _cfg);
+			
+			var form = new Ext.form.FormPanel({
+						labelWidth: 75, 
+						frame:true,
+						bodyStyle:'padding:5px 5px 0',
+						width: 100,
+						defaults: {width: 100},
+						defaultType: 'textfield',
+						items: [{
+								fieldLabel: '注册码',
+								name: 'code',
+								width: 230,
+								allowBlank:false
+							},
+						    {xtype:'label',html: "<span>请将编号[</span><span style=\"color:green\">" + _cfg.cupCode + "</span><span>]，发送至客服邮箱<span style=\"color:#993300\">service@86cut.com</span>获取注册码。</span>"}
+						]
+					});
+			Ext.ffc.regCodeEditWindow.superclass.constructor.call(this, {
+				items: form,
+				buttons: [{
+					text: '确定',
+					handler:function(){
+						var win = this;
+						var vs = form.getForm().getValues();
+						if(!form.form.isValid()){return;};
+						Ext.Ajax.request({
+							url: PATH + '/InputCheckCodeAction.do',
+							params: {m:'input',code:vs.code},
+							success: function(response){
+								eval("var temp = " + response.responseText);
+								if(temp){
+									Ext.Msg.alert("消息", "注册成功!");
+									win.regBtn.setText("已激活");
+									window.document.location.href = "http://" + window.document.location.host;
+								}else{
+									Ext.Msg.alert("消息", "注册失败!");
+								}
+								win.close();
+							}
+						});
+					},scope:this
+				},{
+					text: '关闭',
+					handler:function(){
+						this.close();
+				},scope:this
+			}]
+			});
+		}
+});
+var tb = new Ext.Toolbar();
+    //tb.render('toolbar');
+Ext.Ajax.request({
+		url: PATH + '/loginAction.do',
+		params: {ffc:'getUserModules'},
+		success: function(response){
+			eval("var temp=" + response.responseText);
+			if(temp){
+				for(var i = 0 ; i < temp.length ;i++){
+					if(temp[i].url.match(/\/*/) != ''){
+			            tb.add({id:temp[i].id,text:temp[i].text,url:PATH + temp[i].url,enableToggle :true,
+							toggleHandler: function(){
+								addTab(this.text, this.url);
+							}
+						});
+					}else{
+					    tb.add({id:temp[i].id,text:temp[i].text,menu:addMenu(temp[i].children)});
+					}
+					if(i < temp.length - 1 ){
+						tb.add('-');
+					}
+				}
+			}
+				tb.add('->');
+				tb.add({
+					id: "22222222",
+					tooltip :'单击修改密码',
+					text:'登录人:' + LoginInfor.user.departName + "-" + LoginInfor.user.trueName,
+					handler : function(){
+						var userInfor = LoginInfor.user;
+						var form = new Ext.form.FormPanel({
+									labelWidth: 75, 
+									frame:true,
+									bodyStyle:'padding:5px 5px 0',
+									width: 100,
+									defaults: {width: 100},
+									defaultType: 'textfield',
+									items: [{
+											fieldLabel: '用户名',
+											name: 'userName',
+											readOnly:true,
+											value:userInfor.userName
+										},{
+											fieldLabel: '真实姓名',
+											name: 'trueName',
+											value:userInfor.trueName
+										},{
+											fieldLabel: '所属部门',
+											name: 'departName',
+											readOnly:true,
+											value:userInfor.departName
+										},{
+											fieldLabel: '新密码',
+											inputType :'password',
+											name: 'password',
+											allowBlank:false,
+											maxLength:10,
+											maxLengthText:'密码长度最大为10个字符'
+										},{
+											fieldLabel: '重复新密码',
+											name: 'repassword',
+											inputType :'password',
+											allowBlank:false
+										}
+									]
+								});
+								var userEditWin = new Ext.ffc.UserInforEditWindow({
+									items: form,
+									buttons: [{
+										text: '保存',
+										handler:function(){
+											var vs = form.getForm().getValues();
+											if(!form.form.isValid()){return;};
+											if(vs.password != vs.repassword){
+												Ext.Msg.alert("消息", "您两次输入密码不同,请重新输入!");
+												return ;
+											}
+											Ext.Ajax.request({
+												url: PATH + '/manage/user/usersManageAction.do',
+												params: {ffc:'updateUserInfor',content:Ext.encode({id:userInfor.id,password:vs.password,trueName:vs.trueName})},
+												success: function(response){
+													Ext.Msg.alert("消息", "保存成功!");
+													userEditWin.close();
+												}
+											});
+										}
+									},{
+										text: '关闭',
+										handler:function(){
+											userEditWin.close();
+									}
+								}]}).show();
+					}
+				}); 
+				Ext.ffc.auditWorkButton = tb.add({
+					id: "juzixiangshui",
+					text:'工作提示',
+					enableToggle :true,
+					listeners : {
+						afterrender : function( component ){
+							Ext.apply(Ext.ffc.NoticeMsg,{waitOfficeButtton : component});
+							Ext.ffc.sendMsg2Server('requestInfos');
+						} 
+					},
+					handler : function(){
+						/*Ext.Ajax.request({
+							url: PATH + '/manage/audit/auditInforMangeAction.do',
+							params: {ffc:'findWaitAuditTypeInfor'},
+							success: function(response){
+									eval("var temp = " + response.responseText);
+									var w = new Ext.ffc.WaitOfficeWindow({auditTypes:temp,waitWorks:Ext.ffc.NoticeMsg.waitWorks});
+									w.show();
+									//w.loadData();
+									Ext.ffc.QuickTips.close();
+							}
+						});*/
+						Ext.ffc.QuickTips.close();
+						Ext.ffc.sendMsg2Server('requestInfos');
+					}
+				});
+				/*
+				Ext.ffc.unPaymentButton = tb.add({
+					id: "huikuan",
+					text:'回款提示',
+					enableToggle :true,
+					listeners : {
+						afterrender : function( component ){
+							Ext.apply(Ext.ffc.NoticeMsg,{waitOfficeButtton : component});
+							Ext.ffc.sendMsg2Server('unPayment');
+						} 
+					},
+					handler : function(){
+						Ext.Ajax.request({
+							url: PATH + '/manage/audit/auditInforMangeAction.do',
+							params: {ffc:'findWaitAuditTypeInfor'},
+							success: function(response){
+									eval("var temp = " + response.responseText);
+									var w = new Ext.ffc.WaitOfficeWindow({auditTypes:temp,waitWorks:Ext.ffc.NoticeMsg.waitWorks});
+									w.show();
+									//w.loadData();
+									Ext.ffc.QuickTips.close();
+							}
+						});
+						Ext.ffc.QuickTips2.close();
+						Ext.ffc.sendMsg2Server('unPayment');
+					}
+				});
+				*/
+
+					tb.add({id:"regCodeInput",text: os_isReged ? "已激活" : "软件注册",enableToggle :true,
+					handler : function(){
+					    var btn = tb.findById('regCodeInput');
+						if(os_isReged){
+						    return ;
+						}
+					    var w = new Ext.ffc.regCodeEditWindow({
+							cupCode : Ext.ffc.regCodeEditWindow.cupCode,
+							regBtn : btn
+						});
+						w.show();
+				    }
+					});
+
+					tb.add({id:"quitSystem",text: "安全退出",enableToggle :true,
+					handler : function(){
+						Ext.MessageBox.confirm('系统提示', '请确认是否要退出系统!', function(btn){
+							if(btn != 'yes'){return ;}
+							Ext.Ajax.request({
+								url: PATH + '/LogoutAction.do',
+								params: {m:'logout'},
+								success: function(response){
+									window.document.location.href = "http://" + window.document.location.host;
+								}
+							});
+						});
+				    }
+					});
+				viewMenu();
+			
+		}
+	});
+
+function addMenu(arr){
+    var childrenList = [];
+	for(var i = 0 ; i < arr.length ;i++){
+		if(arr[i].url.match(/\/*/) == ''){
+			childrenList.push({id: arr[i].id,text:arr[i].text,menu: {items:addMenu(arr[i].children)}});
+		}else{
+		    childrenList.push({
+					id: arr[i].id,
+					text:arr[i].text,
+					url:PATH + arr[i].url,
+					enableToggle :true,
+					handler : function(){
+						//alert(this.text+","+ this.url);
+						addTab(this.text, this.url);
+					}
+				});
+		}
+	    
+	}
+	return childrenList;
+}
+
+var actionPanel = new Ext.Panel({ 
+		region:'north', 
+		layout: 'fit',
+		split:false, 
+		collapsible: false, 
+		collapseMode: 'mini', 
+		width:200, 
+		height:27,
+		minWidth: 150, 
+		border: false,
+		baseCls:'x-plain', 
+		items: [tb]
+    });
+
+	var tabPanel = new Ext.TabPanel({ 
+		    region:'center', 
+			//layout: 'fit',
+			deferredRender:false, 
+			autoScroll: true, 
+			margins:'0 4 4 0', 
+			activeTab:0, 
+			items:[
+				/*{ id:'tab1', contentEl:'tabs', title: '主工作区', closable:false, autoScroll:true, }*/
+			]
+	}); 
+
+	function addTab(tabTitle, targetUrl,pclosable){ 
+		if(typeof(pclosable) == 'undefined'){
+		    pclosable = true;
+		}
+		var allTabs = tabPanel.items;
+		var theTab = null;
+		allTabs.find(function(obj){
+			if(obj.autoLoad.url == targetUrl){
+			    theTab = obj;
+			}
+		});
+
+		if(theTab != null){//如果已经存在
+			tabPanel.activate(theTab);
+		}else{
+			tabPanel.add({ 
+				title: tabTitle, 
+				iconCls: 'tabs', 
+				autoLoad: {url: targetUrl, 
+					callback: function(){
+							var s = "";
+							for (var n=0; n< arguments.length; n++){
+								  s += arguments[n];
+								  s += " ";
+							}
+							//alert(s);
+					}, scope: this,scripts:true}, 
+				closable:pclosable,
+				layout: 'fit',
+				listeners : {
+					close : function(p){
+					    p.destroy();
+					},
+					resize  : function( component ,  adjWidth,  adjHeight,  rawWidth,  rawHeight  ){
+						if(component.body){
+							var s = component.body.last();
+							if(s){
+								//Ext.ffc.util.debug(s);
+								//alert(s.getWidth() + "[,]" + s.getHeight());
+								//alert(adjWidth + "," + adjHeight);
+								//s.setWidth(adjWidth);
+								//s.setHeight(adjHeight);
+							}
+						}
+					}
+				}
+			}).show(); 
+		}
+	}
+//addTab("主工作区",PATH + "/pages/audit_infor.jsp",false);
+function viewMenu(){
+	// 配置视图viewport 
+	viewport = new Ext.Viewport({ layout:'border', items:[actionPanel,tabPanel]});
+}	
+if(os_cutToolsSysMsg != '' && os_cutToolsSysMsg != 'null'){
+	Ext.Msg.alert("系统消息", os_cutToolsSysMsg);
+}
+
+});
+
+
+var EventMger = new Ext.util.Observable();// 

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/delivery
+END
+delivery-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/delivery/delivery-dao.xml
+END
+delivery-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/delivery/delivery-business.xml
+END
+delivery-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/delivery/delivery-web-spring.xml
+END

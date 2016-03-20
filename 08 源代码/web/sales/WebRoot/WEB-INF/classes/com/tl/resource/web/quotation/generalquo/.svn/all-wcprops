@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/318/jiyun/src/com/tl/resource/web/quotation/generalquo
+END
+SubmitContractAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/SubmitContractAction.java
+END
+GetCustomerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/GetCustomerAction.java
+END
+UpdateGeneralQuoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/UpdateGeneralQuoAction.java
+END
+GetCompanyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/GetCompanyAction.java
+END
+ListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/ListAction.java
+END
+AddGeneralQuoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/AddGeneralQuoAction.java
+END
+GeneralQuotationListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/sales/!svn/ver/318/jiyun/src/com/tl/resource/web/quotation/generalquo/GeneralQuotationListAction.java
+END
+GetQuoInfoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/GetQuoInfoAction.java
+END
+GeneralQuotationAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/GeneralQuotationAction.java
+END
+SubmitOrderExpectedAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/SubmitOrderExpectedAction.java
+END
+GetHistoryPriceAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/GetHistoryPriceAction.java
+END
+GetQuoDetailAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/GetQuoDetailAction.java
+END
+DeleteQuoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/DeleteQuoAction.java
+END
+DeleteQuoProductAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/DeleteQuoProductAction.java
+END
+SubmitAuditAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/SubmitAuditAction.java
+END
+GetCusByCuscodeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/GetCusByCuscodeAction.java
+END
+GetCurrencyNameAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/GetCurrencyNameAction.java
+END
+ExcelAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/quotation/generalquo/ExcelAction.java
+END

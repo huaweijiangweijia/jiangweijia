@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+   http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+	default-autowire="byType">
+
+	<bean name="/planOrder/listAction" class="com.tl.resource.web.planOrder.PlanOrderListAction">
+		<property name="planOrderService">
+			<ref bean="PlanOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/planOrder/orderDetail" class="com.tl.resource.web.planOrder.OrderDetailAction">
+		<property name="planOrderService">
+			<ref bean="PlanOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/planOrder/orderDetailsList" class="com.tl.resource.web.planOrder.OrderDetailsListAction">
+		<property name="planOrderService">
+			<ref bean="PlanOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/planOrder/suppliersInforList" class="com.tl.resource.web.planOrder.SuppliersInforListAction">
+		<property name="planOrderService">
+			<ref bean="PlanOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/planOrder/addOrder" class="com.tl.resource.web.planOrder.AddPlanOrderAction">
+		<property name="planOrderService">
+			<ref bean="PlanOrderServiceImpl"/>
+		</property>
+		<property name="billsCodeDefService">
+			<ref bean="BillsCodeDefService"/>
+		</property>
+	</bean>
+	
+	<bean name="/planOrder/updateOrder" class="com.tl.resource.web.planOrder.updatePlanOrderAction">
+		<property name="planOrderService">
+			<ref bean="PlanOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/planOrder/deleteOrder" class="com.tl.resource.web.planOrder.DeleteOrderAction">
+		<property name="planOrderService">
+			<ref bean="PlanOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/planOrder/deleteOrderDetail" class="com.tl.resource.web.planOrder.DeleteOrderDetail">
+		<property name="planOrderService">
+			<ref bean="PlanOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/planOrder/productList" class="com.tl.resource.web.planOrder.ProductListAction">
+		<property name="planOrderService">
+			<ref bean="PlanOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/planOrder/planList" class="com.tl.resource.web.planOrder.ReservePlanInforListAction">
+		<property name="planOrderService">
+			<ref bean="PlanOrderServiceImpl"/>
+		</property>
+	</bean>
+
+	<bean name="/planOrder/submitAudit" class="com.tl.resource.web.planOrder.submitPlanOrderAction">
+		<property name="auditService">
+			<ref bean="auditService"/>
+		</property>
+	</bean>
+	
+	<bean name="/planOrder/placeOrder" class="com.tl.resource.web.planOrder.PlaceOrderAction">
+		<property name="planOrderService">
+			<ref bean="PlanOrderServiceImpl"/>
+		</property>
+	</bean>
+	
+	<bean name="/planOrder/orderExcel" class="com.tl.resource.web.planOrder.PlanOrderExcel">
+		<property name="planOrderService">
+			<ref bean="PlanOrderServiceImpl"/>
+		</property>
+		<property name="orderExcelImp">
+			<ref bean="orderExcel"/>
+		</property>
+	</bean>
+	 
+</beans>

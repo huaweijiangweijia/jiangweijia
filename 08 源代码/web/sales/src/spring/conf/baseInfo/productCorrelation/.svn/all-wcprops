@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/248/jiyun/config/spring/conf/baseInfo/productCorrelation
+END
+productCorrelation-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/sales/!svn/ver/248/jiyun/config/spring/conf/baseInfo/productCorrelation/productCorrelation-dao.xml
+END
+productCorrelation-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/sales/!svn/ver/248/jiyun/config/spring/conf/baseInfo/productCorrelation/productCorrelation-business.xml
+END
+productCorrelation-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/baseInfo/productCorrelation/productCorrelation-web-spring.xml
+END

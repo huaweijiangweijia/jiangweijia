@@ -1,0 +1,118 @@
+8
+
+dir
+804
+http://125.76.249.115:8080/svn/sales/jiyun/WebRoot/pages
+http://125.76.249.115:8080/svn/sales
+
+
+
+2015-04-02T01:12:32.461636Z
+668
+lcc
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+081e45d7-d262-1141-abe1-e9a051cbb99e
+
+proToolsInfor
+dir
+
+billDate
+dir
+
+quotation
+dir
+
+delivery
+dir
+
+trySelfOrder
+dir
+
+selfOrder
+dir
+
+reserve_plan
+dir
+
+assessment
+dir
+
+baseInfo
+dir
+
+planOrder
+dir
+
+main_menus.jsp
+file
+
+
+
+
+2015-08-26T03:38:21.281250Z
+c69c4ae6d2735dc9e878a62b3b69f49d
+2015-04-02T00:18:50.032323Z
+665
+lcc
+
+scheduleOrder
+dir
+
+common
+dir
+
+help
+dir
+
+manage
+dir
+
+notepad
+dir
+
+audit_infor.jsp
+file
+
+
+
+
+2015-08-26T03:38:21.281250Z
+d705f3496a4308cf5609af33127412c3
+2014-09-15T01:48:28.148742Z
+19
+lv
+
+arrival
+dir
+
+scheduleSelfOrder
+dir
+
+reserveOrder
+dir
+
+contractOrder
+dir
+
+out_stock
+dir
+
+tryOrder
+dir
+
+contract
+dir
+

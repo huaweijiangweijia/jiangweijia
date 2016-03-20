@@ -1,0 +1,773 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sales/!svn/ver/315/jiyun/src/com/tl/resource/dao
+END
+TUsersRolesDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TUsersRolesDAOImpl.java
+END
+TQuotationProductDetailDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TQuotationProductDetailDAOImpl.java
+END
+TInvoiceInfoDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TInvoiceInfoDAOImpl.java
+END
+TAuditInstanceDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditInstanceDAO.java
+END
+TContractAccountsInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TContractAccountsInforDAOImpl.java
+END
+TExchangeRateDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TExchangeRateDAO.java
+END
+TAccountsInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAccountsInforDAOImpl.java
+END
+TAuditInstanceHistoryDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditInstanceHistoryDAOImpl.java
+END
+TRolesDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TRolesDAOImpl.java
+END
+TUsersRolesDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TUsersRolesDAO.java
+END
+TInvoiceInfoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TInvoiceInfoDAO.java
+END
+TReserveInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TReserveInforDAO.java
+END
+TBillsCodeDefDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TBillsCodeDefDAO.java
+END
+TProductArrivalInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TProductArrivalInforDAOImpl.java
+END
+TRolesDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TRolesDAO.java
+END
+SystemRunDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/SystemRunDao.java
+END
+TAuditTypeDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditTypeDAOImpl.java
+END
+TUserInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TUserInforDAOImpl.java
+END
+TOrderPriceHistoryDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TOrderPriceHistoryDAOImpl.java
+END
+TDeliveryInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TDeliveryInforDAOImpl.java
+END
+TDepartmentsInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TDepartmentsInforDAOImpl.java
+END
+TAuditTypeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditTypeDAO.java
+END
+TOutStockInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TOutStockInforDAO.java
+END
+TCustormerAssessmentDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TCustormerAssessmentDAOImpl.java
+END
+TAuditContentFlowDetailGxDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditContentFlowDetailGxDAO.java
+END
+TUserInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TUserInforDAO.java
+END
+TOutStockDetailDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TOutStockDetailDAOImpl.java
+END
+TOrderPriceHistoryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TOrderPriceHistoryDAO.java
+END
+TDepartmentsInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TDepartmentsInforDAO.java
+END
+TCusSalesPriceHistoryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TCusSalesPriceHistoryDAO.java
+END
+TAuditBatchRecordDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditBatchRecordDAOImpl.java
+END
+TOrderInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/225/jiyun/src/com/tl/resource/dao/TOrderInforDAOImpl.java
+END
+TContractProjectSortInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TContractProjectSortInforDAOImpl.java
+END
+TOutStockDetailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TOutStockDetailDAO.java
+END
+TCustomersInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TCustomersInforDAOImpl.java
+END
+TAuditContentAuditInstGxDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditContentAuditInstGxDAOImpl.java
+END
+TSupplierAssessmentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TSupplierAssessmentDAO.java
+END
+TModulesDefDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TModulesDefDAOImpl.java
+END
+TContractProjectSortInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TContractProjectSortInforDAO.java
+END
+TNotepadTypeDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TNotepadTypeDAOImpl.java
+END
+TInvoiceDetailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TInvoiceDetailDAO.java
+END
+TCustomersInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TCustomersInforDAO.java
+END
+TCustomersDegreeDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TCustomersDegreeDAOImpl.java
+END
+TProductSourceDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TProductSourceDAOImpl.java
+END
+TProductBrandDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TProductBrandDAO.java
+END
+TResourcePurviewDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TResourcePurviewDAOImpl.java
+END
+TNotepadTypeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TNotepadTypeDAO.java
+END
+TSuppliersBrandDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TSuppliersBrandDAO.java
+END
+TContractInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/217/jiyun/src/com/tl/resource/dao/TContractInforDAOImpl.java
+END
+TCustomersDegreeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TCustomersDegreeDAO.java
+END
+TQuotationInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/217/jiyun/src/com/tl/resource/dao/TQuotationInforDAOImpl.java
+END
+TAuditFlowDetailDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditFlowDetailDAOImpl.java
+END
+TProductArrivalDetailDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TProductArrivalDetailDAOImpl.java
+END
+TWorkTrustDetailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TWorkTrustDetailDAO.java
+END
+TAuditContentAuditHistoryGxDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditContentAuditHistoryGxDAO.java
+END
+LogInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/LogInfoDao.java
+END
+TAuditHistoryDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditHistoryDAOImpl.java
+END
+TNotepadDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TNotepadDAOImpl.java
+END
+TRolesModulesDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TRolesModulesDAO.java
+END
+TAuditInstanceDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditInstanceDAOImpl.java
+END
+TAuditFlowInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditFlowInforDAOImpl.java
+END
+TWorkTrustRecordDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TWorkTrustRecordDAO.java
+END
+TProductArrivalDetailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TProductArrivalDetailDAO.java
+END
+TAuditHistoryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditHistoryDAO.java
+END
+TNotepadDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TNotepadDAO.java
+END
+TReserveInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TReserveInforDAOImpl.java
+END
+TAuditFlowInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditFlowInforDAO.java
+END
+BillDocumentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/BillDocumentDao.java
+END
+TProductToolsInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TProductToolsInforDAO.java
+END
+TBillsCodeDefDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TBillsCodeDefDAOImpl.java
+END
+TContractProductDetailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TContractProductDetailDAO.java
+END
+TQuotationProjectSortInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TQuotationProjectSortInforDAOImpl.java
+END
+TAccessoriesDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAccessoriesDAO.java
+END
+TReservePlanInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TReservePlanInforDAOImpl.java
+END
+TQuotationProductDetailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TQuotationProductDetailDAO.java
+END
+TContractAccountsInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TContractAccountsInforDAO.java
+END
+TAuditInstanceHistoryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditInstanceHistoryDAO.java
+END
+TAccountsInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAccountsInforDAO.java
+END
+TQuotationProjectSortInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TQuotationProjectSortInforDAO.java
+END
+TReservePlanInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TReservePlanInforDAO.java
+END
+TTaxRateDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TTaxRateDAOImpl.java
+END
+TOutStockInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TOutStockInforDAOImpl.java
+END
+TAuditContentFlowDetailGxDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditContentFlowDetailGxDAOImpl.java
+END
+TProductArrivalInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TProductArrivalInforDAO.java
+END
+AuditDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/AuditDaoImpl.java
+END
+TTaxRateDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TTaxRateDAO.java
+END
+TCusSalesPriceHistoryDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TCusSalesPriceHistoryDAOImpl.java
+END
+TDeliveryInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TDeliveryInforDAO.java
+END
+AuditDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/AuditDao.java
+END
+TCompanyInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TCompanyInforDAOImpl.java
+END
+TDeliveryDetailDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TDeliveryDetailDAOImpl.java
+END
+TCustormerAssessmentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TCustormerAssessmentDAO.java
+END
+TSupplierAssessmentDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TSupplierAssessmentDAOImpl.java
+END
+TSalesPriceHistoryDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TSalesPriceHistoryDAOImpl.java
+END
+TInvoiceDetailDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TInvoiceDetailDAOImpl.java
+END
+TAuditContentDefDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditContentDefDAOImpl.java
+END
+TCompanyInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TCompanyInforDAO.java
+END
+TDeliveryDetailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TDeliveryDetailDAO.java
+END
+TSuppliersInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/315/jiyun/src/com/tl/resource/dao/TSuppliersInforDAOImpl.java
+END
+TAuditBatchRecordDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditBatchRecordDAO.java
+END
+TProductBrandDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TProductBrandDAOImpl.java
+END
+TOrderInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/225/jiyun/src/com/tl/resource/dao/TOrderInforDAO.java
+END
+TProductSortDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TProductSortDAOImpl.java
+END
+TSalesPriceHistoryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TSalesPriceHistoryDAO.java
+END
+TSuppliersBrandDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TSuppliersBrandDAOImpl.java
+END
+TOrderDetailDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TOrderDetailDAOImpl.java
+END
+TAuditContentDefDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditContentDefDAO.java
+END
+TSuppliersInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/315/jiyun/src/com/tl/resource/dao/TSuppliersInforDAO.java
+END
+TRebateDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TRebateDAOImpl.java
+END
+TAuditContentAuditInstGxDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditContentAuditInstGxDAO.java
+END
+TModulesDefDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TModulesDefDAO.java
+END
+TProductSortDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TProductSortDAO.java
+END
+TWorkTrustDetailDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TWorkTrustDetailDAOImpl.java
+END
+TAuditContentAuditHistoryGxDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditContentAuditHistoryGxDAOImpl.java
+END
+TOrderDetailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TOrderDetailDAO.java
+END
+TRolesModulesDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TRolesModulesDAOImpl.java
+END
+TProductSourceDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TProductSourceDAO.java
+END
+TRebateDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TRebateDAO.java
+END
+TWorkTrustRecordDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TWorkTrustRecordDAOImpl.java
+END
+TResourcePurviewDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TResourcePurviewDAO.java
+END
+TContractInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/217/jiyun/src/com/tl/resource/dao/TContractInforDAO.java
+END
+BillDocumentDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/BillDocumentDaoImpl.java
+END
+TExchangeRateDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TExchangeRateDAOImpl.java
+END
+TProductToolsInforDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TProductToolsInforDAOImpl.java
+END
+TAuditFlowDetailDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAuditFlowDetailDAO.java
+END
+TQuotationInforDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/217/jiyun/src/com/tl/resource/dao/TQuotationInforDAO.java
+END
+TContractProductDetailDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TContractProductDetailDAOImpl.java
+END
+TAccessoriesDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/dao/TAccessoriesDAOImpl.java
+END

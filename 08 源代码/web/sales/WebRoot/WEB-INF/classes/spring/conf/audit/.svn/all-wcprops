@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/audit
+END
+audit-web-spring.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/audit/audit-web-spring.xml
+END
+audit-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/audit/audit-dao.xml
+END
+audit-business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sales/!svn/ver/232/jiyun/config/spring/conf/audit/audit-business.xml
+END

@@ -1,0 +1,52 @@
+8
+
+dir
+804
+http://125.76.249.115:8080/svn/sales/jiyun/WebRoot/js/quotation/testCutQuo
+http://125.76.249.115:8080/svn/sales
+
+
+
+2015-02-07T11:09:49.397623Z
+323
+lcc
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+081e45d7-d262-1141-abe1-e9a051cbb99e
+
+testCutQuo_index.js
+file
+
+
+
+
+2015-08-26T03:43:17.046875Z
+b1696521d2f091a8f234d42f078ce1ab
+2015-02-07T11:09:49.397623Z
+323
+lcc
+
+QuoDetailWindow.js
+file
+
+
+
+
+2015-08-26T03:43:17.031250Z
+af8ddffbf9b14286592cefdcfd0dcb66
+2014-09-15T01:48:28.148742Z
+19
+lv
+

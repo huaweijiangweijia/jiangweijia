@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sales/!svn/ver/659/jiyun/src/com/tl/resource/web
+END
+DataBackupImpAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/DataBackupImpAction.java
+END
+IndexAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sales/!svn/ver/659/jiyun/src/com/tl/resource/web/IndexAction.java
+END
+SystemUpdateAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/web/SystemUpdateAction.java
+END
+LoginAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sales/!svn/ver/659/jiyun/src/com/tl/resource/web/LoginAction.java
+END
+WaitWorksInforAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/308/jiyun/src/com/tl/resource/web/WaitWorksInforAction.java
+END
+InputCheckCodeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/659/jiyun/src/com/tl/resource/web/InputCheckCodeAction.java
+END
+LogoutAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sales/!svn/ver/308/jiyun/src/com/tl/resource/web/LogoutAction.java
+END

@@ -1,0 +1,353 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/sales/!svn/ver/315/jiyun/src/com/tl/resource/business/dto
+END
+CustormerAssessmentDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/CustormerAssessmentDto.java
+END
+ReservePlanMainInforDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ReservePlanMainInforDto.java
+END
+NotepadDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/NotepadDto.java
+END
+CurrencyDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/CurrencyDto.java
+END
+AuditInstanceDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/AuditInstanceDto.java
+END
+AccountsInforPagerDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/AccountsInforPagerDto.java
+END
+LogInfoDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/62/jiyun/src/com/tl/resource/business/dto/LogInfoDto.java
+END
+OutStockDetailDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/OutStockDetailDto.java
+END
+TreeDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/TreeDto.java
+END
+ContractDetailDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ContractDetailDto.java
+END
+ContractProductDetailDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ContractProductDetailDto.java
+END
+ArrivalOrderDetialsDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ArrivalOrderDetialsDto.java
+END
+QuotationDetailOutStockDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/QuotationDetailOutStockDto.java
+END
+AccessoriesDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/AccessoriesDto.java
+END
+TQuotationInforDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/315/jiyun/src/com/tl/resource/business/dto/TQuotationInforDto.java
+END
+QuotationDetailDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/QuotationDetailDto.java
+END
+CompanyDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/CompanyDto.java
+END
+LoginInforDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/LoginInforDto.java
+END
+DeliveryProductDetailDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/DeliveryProductDetailDto.java
+END
+ReserveOrderDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ReserveOrderDto.java
+END
+ModulesDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ModulesDto.java
+END
+QuotationDetailForOrderDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/QuotationDetailForOrderDto.java
+END
+ReservePlanDetailDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ReservePlanDetailDto.java
+END
+ReserveInforDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ReserveInforDto.java
+END
+SupplierAssessmentDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/SupplierAssessmentDto.java
+END
+ContractAccountsInforDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ContractAccountsInforDto.java
+END
+SalesPriceHistoryDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/SalesPriceHistoryDto.java
+END
+ModulesCheckBoxDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ModulesCheckBoxDto.java
+END
+InvoiceDetailDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/InvoiceDetailDto.java
+END
+BillsCodeDefDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/BillsCodeDefDto.java
+END
+BillDocumentDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/BillDocumentDto.java
+END
+QuotationDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/62/jiyun/src/com/tl/resource/business/dto/QuotationDto.java
+END
+RolesDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/RolesDto.java
+END
+SuppliersInforDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/SuppliersInforDto.java
+END
+ReserveOrderBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ReserveOrderBean.java
+END
+ContractProductSortDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ContractProductSortDto.java
+END
+CurSalesPriceHistoryDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/CurSalesPriceHistoryDto.java
+END
+OrderInfoDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/62/jiyun/src/com/tl/resource/business/dto/OrderInfoDto.java
+END
+ContractViewPanelDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ContractViewPanelDto.java
+END
+InvoiceInforDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/InvoiceInforDto.java
+END
+Modules4AsyncDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/Modules4AsyncDto.java
+END
+NotepadTypeDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/NotepadTypeDto.java
+END
+DeliveryProductSortDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/DeliveryProductSortDto.java
+END
+SalesPriceHistoryProDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/SalesPriceHistoryProDto.java
+END
+SuppliersBrandDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/SuppliersBrandDto.java
+END
+ArrivalInforDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ArrivalInforDto.java
+END
+OutStockInforDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/OutStockInforDto.java
+END
+ContractInforDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ContractInforDto.java
+END
+DegreeRebateDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/DegreeRebateDto.java
+END
+UserDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/UserDto.java
+END
+QuoCodeTreeDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/QuoCodeTreeDto.java
+END
+OrderPriceHistoryDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/OrderPriceHistoryDto.java
+END
+OrderDetialsDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/OrderDetialsDto.java
+END
+DeliveryInforDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/DeliveryInforDto.java
+END
+RolesPageDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/RolesPageDto.java
+END
+ProductArrivalDetailDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ProductArrivalDetailDto.java
+END
+ImportSalesPriceDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/dto/ImportSalesPriceDto.java
+END
+DepartmentsDto.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/sales/!svn/ver/62/jiyun/src/com/tl/resource/business/dto/DepartmentsDto.java
+END

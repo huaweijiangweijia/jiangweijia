@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/sales/!svn/ver/315/jiyun/src/com/tl/resource/business/baseInfo
+END
+OrderPriceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/baseInfo/OrderPriceService.java
+END
+ReserveInforServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/baseInfo/ReserveInforServiceImp.java
+END
+ProductToolsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/baseInfo/ProductToolsService.java
+END
+ProductCorrelationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/baseInfo/ProductCorrelationService.java
+END
+OrderPriImportServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/baseInfo/OrderPriImportServiceImpl.java
+END
+OrderPriceServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/baseInfo/OrderPriceServiceImp.java
+END
+ProductCorrelationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/baseInfo/ProductCorrelationServiceImpl.java
+END
+BaseInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sales/!svn/ver/315/jiyun/src/com/tl/resource/business/baseInfo/BaseInfoService.java
+END
+ProductToolsServiceImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/baseInfo/ProductToolsServiceImp.java
+END
+BaseInfoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/sales/!svn/ver/315/jiyun/src/com/tl/resource/business/baseInfo/BaseInfoServiceImpl.java
+END
+ReserveInforService.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/sales/!svn/ver/19/jiyun/src/com/tl/resource/business/baseInfo/ReserveInforService.java
+END
